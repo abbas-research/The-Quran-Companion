@@ -93,7 +93,7 @@ h3{
 
     max-width:700px;
 
-    margin:25px auto;
+    margin:18px auto;
 
     color:#6E665F;
 
@@ -101,31 +101,60 @@ h3{
 
 button{
 
-    background:#B8923A;
+    background:linear-gradient(
+        180deg,
+        #C79D3B,
+        #B8923A
+    );
 
     color:white;
 
     border:none;
 
-    padding:15px 34px;
+    width:320px;
 
-    border-radius:14px;
+    max-width:90%;
 
-    font-size:17px;
+    padding:18px 34px;
+
+    border-radius:20px;
+
+    font-size:18px;
+
+    font-weight:600;
 
     cursor:pointer;
 
-    transition:.25s;
+    transition:all .25s ease;
 
-    font-weight:600;
+    box-shadow:
+        0 10px 25px rgba(184,146,58,.25);
+
+}
+.heroButton{
+
+    width:380px;
+
+    max-width:90%;
+
+    padding:20px;
+
+    font-size:20px;
 
 }
 
 button:hover{
 
-    transform:translateY(-3px);
+    transform:translateY(-4px) scale(1.02);
 
-    background:#A7812C;
+    background:linear-gradient(
+        180deg,
+        #CEA548,
+        #B8923A
+    );
+
+    box-shadow:
+        0 18px 40px rgba(184,146,58,.35);
 
 }
 
@@ -345,7 +374,31 @@ button:hover{
 
     letter-spacing:10px;
 
-    margin-bottom:25px;
+    margin-bottom:14px;
+
+}
+.heroIntro{
+
+    max-width:700px;
+
+    margin:0 auto 14px;
+
+    padding:16px 24px;
+
+    background:#FCFBF8;
+
+    border-left:4px solid #B8923A;
+
+    border-radius:16px;
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,.05);
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    color:#5F584F;
 
 }
 
@@ -357,7 +410,7 @@ button:hover{
 
     background:#D9C08A;
 
-    margin:25px auto 45px;
+    margin:18px auto 24px;
 
 }
 
@@ -381,17 +434,19 @@ button:hover{
 
 .hadithSource{
 
-    margin-top:18px;
+    margin-top:16px;
 
-    margin-bottom:30px;
+    margin-bottom:28px;
 
     color:#7B7066;
 
-    font-size:17px;
+    font-size:15px;
 
-    line-height:1.7;
+    line-height:1.6;
 
-    letter-spacing:.5px;
+    letter-spacing:.3px;
+    font-weight:400;
+    opacity:.85;
 
 }
 /* ===========================

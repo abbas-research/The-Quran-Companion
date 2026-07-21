@@ -41,6 +41,12 @@ app.innerHTML = `
 
 </div>
 
+<p class="heroIntro">
+
+Answer two simple questions, then let a Verse of the Holy Qur'an find you—offering comfort, hope, gratitude, patience, or reflection for where you are today.
+
+</p>
+
 <p class="coverLabel">
 
 Wisdom from Imam Ali (a)
@@ -62,7 +68,7 @@ Nahj al-Balagha
 
 </p>
 
-<button onclick="showQuestion(1)">
+<button class="heroButton" onclick="showQuestion(1)">
 
 Begin Journey
 
