@@ -65,6 +65,13 @@ const VERSES = [
         "Help",
         "Allah"
     ],
+    primaryJourney: "STRUGGLE_LOST",
+
+    journeys: [
+    "GUIDANCE_PURPOSE",
+    "GUIDANCE_KNOWLEDGE",
+    "STRUGGLE_LOST"
+    ],
 
     relatedVerses: [
         { surah: 2, ayah: "2" },
@@ -110,6 +117,11 @@ const VERSES = [
         "Taqwa",
         "Faith"
     ],
+
+    journeys: [
+    "GUIDANCE_KNOWLEDGE",
+    "GUIDANCE_PURPOSE"
+],
 
     relatedVerses: [
         { surah: 1, ayah: "5-7" },
@@ -161,6 +173,13 @@ const VERSES = [
         "Help"
     ],
 
+    journeys: [
+    "STRUGGLE_HEART",
+    "ANXIOUS_EVERYTHING",
+    "ANXIOUS_HEALTH",
+    "ANXIOUS_MONEY"
+],
+
     relatedVerses: [
         { surah: 2, ayah: "153" },
         { surah: 94, ayah: "5-6" }
@@ -206,6 +225,13 @@ const VERSES = [
         "Dhikr",
         "Thankfulness"
     ],
+    primaryJourney: "GRATEFUL_EVERYTHING",
+
+    journeys: [
+    "GRATEFUL_FAITH",
+    "GRATEFUL_EVERYTHING",
+    "GUIDANCE_PEACE"
+],
 
     relatedVerses: [
         { surah: 14, ayah: "7" },
@@ -257,6 +283,14 @@ const VERSES = [
         "Support"
     ],
 
+    journeys: [
+    "STRUGGLE_HEART",
+    "STRUGGLE_FUTURE",
+    "ANXIOUS_EVERYTHING",
+    "ANXIOUS_MONEY",
+    "ANXIOUS_HEALTH"
+],
+
     relatedVerses: [
         { surah: 2, ayah: "45-46" },
         { surah: 94, ayah: "5-6" }
@@ -305,6 +339,16 @@ const VERSES = [
         "Disaster",
         "Hope"
     ],
+    primaryJourney: "ANXIOUS_HEALTH",
+
+    journeys: [
+    "STRUGGLE_HEART",
+    "STRUGGLE_FAMILY",
+    "STRUGGLE_FUTURE",
+    "ANXIOUS_HEALTH",
+    "ANXIOUS_MONEY",
+    "ANXIOUS_EVERYTHING"
+],
 
     relatedVerses: [
         { surah: 94, ayah: "5-6" },
@@ -356,6 +400,14 @@ const VERSES = [
         "Faith"
     ],
 
+    journeys: [
+    "STRUGGLE_HEART",
+    "STRUGGLE_LOST",
+    "GUIDANCE_PURPOSE",
+    "GUIDANCE_FORGIVENESS",
+    "GUIDANCE_PEACE"
+],
+
     relatedVerses: [
         { surah: 13, ayah: "28" },
         { surah: 39, ayah: "53" }
@@ -401,6 +453,12 @@ const VERSES = [
         "Hereafter",
         "Blessings"
     ],
+
+    journeys: [
+    "GUIDANCE_PURPOSE",
+    "GRATEFUL_EVERYTHING",
+    "GRATEFUL_FAITH"
+],
 
     relatedVerses: [
         { surah: 2, ayah: "186" },
@@ -449,6 +507,12 @@ const VERSES = [
         "Knowledge",
         "Tawhid"
     ],
+
+    journeys: [
+    "GUIDANCE_PEACE",
+    "ANXIOUS_EVERYTHING",
+    "GRATEFUL_FAITH"
+],
 
     relatedVerses: [
         { surah: 112, ayah: "1-4" },
@@ -501,6 +565,16 @@ const VERSES = [
         "Du'a"
     ],
 
+    journeys: [
+    "STRUGGLE_HEART",
+    "STRUGGLE_FUTURE",
+    "ANXIOUS_MONEY",
+    "ANXIOUS_HEALTH",
+    "ANXIOUS_FUTURE",
+    "ANXIOUS_EVERYTHING",
+    "GUIDANCE_FORGIVENESS"
+],
+
     relatedVerses: [
         { surah: 39, ayah: "53" },
         { surah: 94, ayah: "5-6" }
@@ -550,6 +624,13 @@ const VERSES = [
         "Strength",
         "Courage"
     ],
+
+    journeys: [
+    "STRUGGLE_HEART",
+    "STRUGGLE_FUTURE",
+    "ANXIOUS_FUTURE",
+    "ANXIOUS_EVERYTHING"
+],
 
     relatedVerses: [
         { surah: 94, ayah: "5-6" },
@@ -601,6 +682,12 @@ const VERSES = [
         "Leadership"
     ],
 
+    journeys: [
+    "STRUGGLE_FAMILY",
+    "GUIDANCE_PEACE",
+    "GUIDANCE_FORGIVENESS"
+],
+
     relatedVerses: [
         { surah: 42, ayah: "38" },
         { surah: 9, ayah: "51" }
@@ -649,6 +736,13 @@ const VERSES = [
         "Faith"
     ],
 
+    journeys: [
+    "ANXIOUS_FUTURE",
+    "ANXIOUS_EVERYTHING",
+    "ANXIOUS_MONEY",
+    "ANXIOUS_HEALTH"
+],
+
     relatedVerses: [
         { surah: 9, ayah: "51" },
         { surah: 2, ayah: "286" }
@@ -695,6 +789,14 @@ const VERSES = [
         "Success",
         "Taqwa"
     ],
+    primaryJourney: "ANXIOUS_MONEY",
+
+    journeys: [
+    "STRUGGLE_FUTURE",
+    "ANXIOUS_FUTURE",
+    "ANXIOUS_MONEY",
+    "ANXIOUS_HEALTH"
+],
 
     relatedVerses: [
         { surah: 2, ayah: "153" },
@@ -743,6 +845,10 @@ const VERSES = [
         "Strength"
     ],
 
+    journeys: [
+    "STRUGGLE_FAMILY"
+],
+
     relatedVerses: [
         { surah: 49, ayah: "10" },
         { surah: 3, ayah: "200" }
@@ -788,6 +894,11 @@ const VERSES = [
         "Mercy",
         "Victory"
     ],
+
+    journeys: [
+    "STRUGGLE_HEART",
+    "ANXIOUS_EVERYTHING"
+],
 
     relatedVerses: [
         { surah: 2, ayah: "286" },
@@ -836,6 +947,13 @@ const VERSES = [
         "Protection"
     ],
 
+    journeys: [
+    "ANXIOUS_FUTURE",
+    "ANXIOUS_HEALTH",
+    "ANXIOUS_MONEY",
+    "ANXIOUS_EVERYTHING"
+],
+
     relatedVerses: [
         { surah: 3, ayah: "173" },
         { surah: 65, ayah: "3" }
@@ -882,6 +1000,13 @@ const VERSES = [
         "Mercy",
         "Guidance"
     ],
+
+    journeys: [
+    "STRUGGLE_HEART",
+    "STRUGGLE_LOST",
+    "GUIDANCE_PURPOSE",
+    "GUIDANCE_PEACE"
+],
 
     relatedVerses: [
         { surah: 13, ayah: "28" },
@@ -930,6 +1055,11 @@ const VERSES = [
         "Allah"
     ],
 
+    journeys: [
+    "ANXIOUS_MONEY",
+    "STRUGGLE_FUTURE"
+],
+
     relatedVerses: [
         { surah: 65, ayah: "3" },
         { surah: 2, ayah: "286" }
@@ -977,6 +1107,14 @@ const VERSES = [
         "Good Deeds",
         "Hope"
     ],
+    primaryJourney: "STRUGGLE_FUTURE",
+
+    journeys: [
+    "STRUGGLE_FUTURE",
+    "ANXIOUS_FUTURE",
+    "ANXIOUS_MONEY",
+    "ANXIOUS_HEALTH"
+],
 
     relatedVerses: [
         { surah: 3, ayah: "200" },
@@ -1025,6 +1163,11 @@ const VERSES = [
         "Allah"
     ],
 
+    journeys: [
+    "STRUGGLE_HEART",
+    "STRUGGLE_FAMILY"
+],
+
     relatedVerses: [
         { surah: 12, ayah: "83" },
         { surah: 11, ayah: "115" }
@@ -1071,6 +1214,11 @@ const VERSES = [
         "Trust",
         "Allah"
     ],
+
+    journeys: [
+    "STRUGGLE_HEART",
+    "STRUGGLE_FAMILY"
+],
 
     relatedVerses: [
         { surah: 12, ayah: "87" },
@@ -1119,6 +1267,14 @@ const VERSES = [
         "Faith",
         "Perseverance"
     ],
+    primaryJourney: "STRUGGLE_HEART",
+
+    journeys: [
+    "STRUGGLE_HEART",
+    "STRUGGLE_FUTURE",
+    "ANXIOUS_FUTURE",
+    "ANXIOUS_EVERYTHING"
+],
 
     relatedVerses: [
         { surah: 39, ayah: "53" },
@@ -1166,6 +1322,11 @@ const VERSES = [
         "Faith"
     ],
 
+    journeys: [
+    "GUIDANCE_PURPOSE",
+    "STRUGGLE_LOST"
+],
+
     relatedVerses: [
         { surah: 29, ayah: "69" },
         { surah: 2, ayah: "286" }
@@ -1212,6 +1373,13 @@ const VERSES = [
         "Comfort",
         "Remembrance"
     ],
+    primaryJourney: "GUIDANCE_PEACE",
+
+    journeys: [
+    "GUIDANCE_PEACE",
+    "STRUGGLE_HEART",
+    "ANXIOUS_EVERYTHING"
+],
 
     relatedVerses: [
         { surah: 10, ayah: "57" },
@@ -1257,6 +1425,11 @@ const VERSES = [
         "Destiny"
     ],
 
+    journeys: [
+    "ANXIOUS_FUTURE",
+    "STRUGGLE_FUTURE"
+],
+
     relatedVerses: [
         { surah: 9, ayah: "51" },
         { surah: 2, ayah: "286" }
@@ -1300,6 +1473,13 @@ const VERSES = [
         "Blessings",
         "Thankfulness"
     ],
+
+    journeys: [
+    "GRATEFUL_EVERYTHING",
+    "GRATEFUL_FAITH",
+    "GRATEFUL_FAMILY",
+    "GRATEFUL_HEALTH"
+],
 
     relatedVerses: [
         { surah: 2, ayah: "152" },
@@ -1346,6 +1526,12 @@ const VERSES = [
         "Tree"
     ],
 
+    journeys: [
+    "GUIDANCE_PURPOSE",
+    "GUIDANCE_KNOWLEDGE",
+    "GRATEFUL_FAITH"
+],
+
     relatedVerses: [
         { surah: 41, ayah: "34" },
         { surah: 49, ayah: "11" }
@@ -1388,6 +1574,12 @@ const VERSES = [
         "Gratitude",
         "Reflection"
     ],
+
+    journeys: [
+    "GRATEFUL_EVERYTHING",
+    "GRATEFUL_HEALTH",
+    "GRATEFUL_FAMILY"
+],
 
     relatedVerses: [
         { surah: 14, ayah: "7" },
@@ -1433,6 +1625,10 @@ const VERSES = [
         "Hereafter",
         "Wrongdoers"
     ],
+
+    journeys: [
+    "STRUGGLE_HEART"
+],
 
     relatedVerses: [
         { surah: 16, ayah: "90" },
@@ -1480,6 +1676,11 @@ const VERSES = [
         "Character"
     ],
 
+    journeys: [
+    "STRUGGLE_FAMILY",
+    "GUIDANCE_PURPOSE"
+],
+
     relatedVerses: [
         { surah: 49, ayah: "10" },
         { surah: 17, ayah: "53" }
@@ -1526,6 +1727,12 @@ const VERSES = [
         "Blessings"
     ],
 
+    journeys: [
+    "STRUGGLE_FUTURE",
+    "GRATEFUL_FAITH",
+    "GRATEFUL_EVERYTHING"
+],
+
     relatedVerses: [
         { surah: 11, ayah: "115" },
         { surah: 18, ayah: "46" }
@@ -1571,6 +1778,12 @@ const VERSES = [
         "Respect",
         "Family"
     ],
+
+    journeys: [
+    "STRUGGLE_FAMILY",
+    "GRATEFUL_FAMILY",
+    "GUIDANCE_FORGIVENESS"
+],
 
     relatedVerses: [
         { surah: 31, ayah: "14" },
@@ -1619,6 +1832,11 @@ const VERSES = [
         "Self-Control"
     ],
 
+    journeys: [
+    "STRUGGLE_FAMILY",
+    "GUIDANCE_PEACE"
+],
+
     relatedVerses: [
         { surah: 41, ayah: "34" },
         { surah: 49, ayah: "11" }
@@ -1664,6 +1882,11 @@ const VERSES = [
         "Blessings",
         "Provision"
     ],
+
+    journeys: [
+    "STRUGGLE_HEART",
+    "GRATEFUL_EVERYTHING"
+],
 
     relatedVerses: [
         { surah: 95, ayah: "4-6" },
@@ -1711,6 +1934,12 @@ const VERSES = [
         "Du'a"
     ],
 
+    journeys: [
+    "STRUGGLE_LOST",
+    "GUIDANCE_PURPOSE",
+    "GUIDANCE_PEACE"
+],
+
     relatedVerses: [
         { surah: 2, ayah: "186" },
         { surah: 1, ayah: "5-7" }
@@ -1756,6 +1985,12 @@ const VERSES = [
         "Remembrance",
         "Contentment"
     ],
+
+    journeys: [
+    "GUIDANCE_PEACE",
+    "GUIDANCE_PURPOSE",
+    "GRATEFUL_FAITH"
+],
 
     relatedVerses: [
         { surah: 13, ayah: "28" },
@@ -1803,6 +2038,12 @@ const VERSES = [
         "Hereafter"
     ],
 
+    journeys: [
+    "ANXIOUS_MONEY",
+    "GRATEFUL_FAMILY",
+    "GRATEFUL_EVERYTHING"
+],
+
     relatedVerses: [
         { surah: 57, ayah: "20" },
         { surah: 16, ayah: "97" }
@@ -1849,6 +2090,10 @@ const VERSES = [
         "Humility"
     ],
 
+    journeys: [
+    "GUIDANCE_KNOWLEDGE"
+],
+
     relatedVerses: [
         { surah: 20, ayah: "114" },
         { surah: 96, ayah: "1-5" }
@@ -1894,6 +2139,10 @@ const VERSES = [
         "Wisdom",
         "Du'a"
     ],
+
+    journeys: [
+    "GUIDANCE_KNOWLEDGE"
+],
 
     relatedVerses: [
         { surah: 18, ayah: "109" },
@@ -1945,6 +2194,12 @@ const VERSES = [
         "Musa"
     ],
 
+    journeys: [
+    "ANXIOUS_FUTURE",
+    "GUIDANCE_PURPOSE",
+    "GUIDANCE_PEACE"
+],
+
     relatedVerses: [
         { surah: 2, ayah: "286" },
         { surah: 20, ayah: "46" }
@@ -1992,6 +2247,13 @@ const VERSES = [
         "Reassurance"
     ],
 
+    journeys: [
+    "ANXIOUS_HEALTH",
+    "ANXIOUS_FUTURE",
+    "ANXIOUS_EVERYTHING",
+    "STRUGGLE_HEART"
+],
+
     relatedVerses: [
         { surah: 3, ayah: "173" },
         { surah: 9, ayah: "51" }
@@ -2037,6 +2299,12 @@ const VERSES = [
         "Rizq",
         "Righteousness"
     ],
+
+    journeys: [
+    "ANXIOUS_MONEY",
+    "STRUGGLE_FUTURE",
+    "GUIDANCE_PURPOSE"
+],
 
     relatedVerses: [
         { surah: 11, ayah: "6" },
@@ -2086,6 +2354,12 @@ const VERSES = [
         "Patience"
     ],
 
+    journeys: [
+    "ANXIOUS_HEALTH",
+    "STRUGGLE_HEART",
+    "STRUGGLE_FAMILY"
+],
+
     relatedVerses: [
         { surah: 11, ayah: "115" },
         { surah: 39, ayah: "53" }
@@ -2133,6 +2407,11 @@ const VERSES = [
         "Du'a"
     ],
 
+    journeys: [
+    "GUIDANCE_FORGIVENESS",
+    "STRUGGLE_HEART"
+],
+
     relatedVerses: [
         { surah: 39, ayah: "53" },
         { surah: 2, ayah: "186" }
@@ -2179,6 +2458,11 @@ const VERSES = [
         "Du'a"
     ],
 
+    journeys: [
+    "STRUGGLE_FAMILY",
+    "GRATEFUL_FAMILY"
+],
+
     relatedVerses: [
         { surah: 25, ayah: "74" },
         { surah: 2, ayah: "186" }
@@ -2223,6 +2507,11 @@ const VERSES = [
         "Compassion",
         "Guidance"
     ],
+
+    journeys: [
+    "GUIDANCE_PURPOSE",
+    "GUIDANCE_PEACE"
+],
 
     relatedVerses: [
         { surah: 39, ayah: "53" },
@@ -2270,6 +2559,12 @@ const VERSES = [
         "Guidance"
     ],
 
+    journeys: [
+    "STRUGGLE_LOST",
+    "GUIDANCE_KNOWLEDGE",
+    "GUIDANCE_PURPOSE"
+],
+
     relatedVerses: [
         { surah: 18, ayah: "109" },
         { surah: 20, ayah: "114" }
@@ -2316,6 +2611,11 @@ const VERSES = [
         "Salah"
     ],
 
+    journeys: [
+    "GUIDANCE_PURPOSE",
+    "GRATEFUL_FAITH"
+],
+
     relatedVerses: [
         { surah: 16, ayah: "97" },
         { surah: 20, ayah: "132" }
@@ -2361,6 +2661,11 @@ const VERSES = [
         "Shaytan",
         "Du'a"
     ],
+
+    journeys: [
+    "GUIDANCE_PEACE",
+    "GUIDANCE_FORGIVENESS"
+],
 
     relatedVerses: [
         { surah: 113, ayah: "1-5" },
@@ -2410,6 +2715,12 @@ const VERSES = [
         "Pardon",
         "Generosity"
     ],
+    primaryJourney: "STRUGGLE_FAMILY",
+
+    journeys: [
+    "STRUGGLE_FAMILY",
+    "GUIDANCE_FORGIVENESS"
+],
 
     relatedVerses: [
         { surah: 41, ayah: "34" },
@@ -2459,6 +2770,11 @@ const VERSES = [
         "Character"
     ],
 
+    journeys: [
+    "STRUGGLE_FAMILY",
+    "GUIDANCE_PEACE"
+],
+
     relatedVerses: [
         { surah: 17, ayah: "53" },
         { surah: 16, ayah: "90" }
@@ -2507,6 +2823,11 @@ const VERSES = [
         "Righteousness"
     ],
 
+    journeys: [
+    "STRUGGLE_FAMILY",
+    "GRATEFUL_FAMILY"
+],
+
     relatedVerses: [
         { surah: 30, ayah: "21" },
         { surah: 21, ayah: "89" }
@@ -2554,6 +2875,10 @@ const VERSES = [
         "Mercy",
         "Hope"
     ],
+
+    journeys: [
+    "ANXIOUS_HEALTH"
+],
 
     relatedVerses: [
         { surah: 21, ayah: "83-84" },
@@ -2604,6 +2929,11 @@ const VERSES = [
         "Sulaiman"
     ],
 
+    journeys: [
+    "GRATEFUL_FAITH",
+    "GRATEFUL_EVERYTHING"
+],
+
     relatedVerses: [
         { surah: 14, ayah: "7" },
         { surah: 2, ayah: "152" }
@@ -2653,6 +2983,11 @@ const VERSES = [
         "Need"
     ],
 
+    journeys: [
+    "ANXIOUS_MONEY",
+    "STRUGGLE_FUTURE"
+],
+
     relatedVerses: [
         { surah: 11, ayah: "6" },
         { surah: 20, ayah: "132" }
@@ -2700,6 +3035,11 @@ const VERSES = [
         "Good Deeds",
         "Worldly Life"
     ],
+
+    journeys: [
+    "GRATEFUL_EVERYTHING",
+    "GUIDANCE_PURPOSE"
+],
 
     relatedVerses: [
         { surah: 18, ayah: "46" },
@@ -2749,6 +3089,13 @@ const VERSES = [
         "Good-doers"
     ],
 
+    journeys: [
+    "STRUGGLE_LOST",
+    "STRUGGLE_FUTURE",
+    "GUIDANCE_PURPOSE",
+    "GUIDANCE_KNOWLEDGE"
+],
+
     relatedVerses: [
         { surah: 13, ayah: "11" },
         { surah: 3, ayah: "200" }
@@ -2796,6 +3143,13 @@ const VERSES = [
         "Compassion",
         "Mercy"
     ],
+    primaryJourney: "GRATEFUL_FAMILY",
+
+    journeys: [
+    "STRUGGLE_FAMILY",
+    "GRATEFUL_FAMILY",
+    "GUIDANCE_PEACE"
+],
 
     relatedVerses: [
         { surah: 25, ayah: "74" },
@@ -2847,6 +3201,12 @@ const VERSES = [
         "Luqman"
     ],
 
+    journeys: [
+    "GUIDANCE_PURPOSE",
+    "GRATEFUL_FAMILY",
+    "STRUGGLE_FAMILY"
+],
+
     relatedVerses: [
         { surah: 16, ayah: "90" },
         { surah: 25, ayah: "63" }
@@ -2894,6 +3254,11 @@ const VERSES = [
         "Charity"
     ],
 
+    journeys: [
+    "GRATEFUL_FAITH",
+    "GUIDANCE_PURPOSE"
+],
+
     relatedVerses: [
         { surah: 39, ayah: "10" },
         { surah: 2, ayah: "186" }
@@ -2939,6 +3304,11 @@ const VERSES = [
         "Hope",
         "Remembrance"
     ],
+
+    journeys: [
+    "GUIDANCE_PURPOSE",
+    "GUIDANCE_PEACE"
+],
 
     relatedVerses: [
         { surah: 25, ayah: "63" },
@@ -2986,6 +3356,12 @@ const VERSES = [
         "Patience",
         "Charity"
     ],
+
+    journeys: [
+    "GUIDANCE_FORGIVENESS",
+    "GUIDANCE_PURPOSE",
+    "GRATEFUL_FAITH"
+],
 
     relatedVerses: [
         { surah: 16, ayah: "97" },
@@ -3035,6 +3411,11 @@ const VERSES = [
         "Success"
     ],
 
+    journeys: [
+    "GUIDANCE_FORGIVENESS",
+    "STRUGGLE_FAMILY"
+],
+
     relatedVerses: [
         { surah: 17, ayah: "53" },
         { surah: 16, ayah: "90" }
@@ -3083,6 +3464,13 @@ const VERSES = [
         "Trust",
         "Allah"
     ],
+    primaryJourney: "ANXIOUS_FUTURE",
+
+    journeys: [
+    "ANXIOUS_MONEY",
+    "ANXIOUS_FUTURE",
+    "STRUGGLE_FUTURE"
+],
 
     relatedVerses: [
         { surah: 39, ayah: "53" },
@@ -3132,6 +3520,11 @@ const VERSES = [
         "Self-Sufficient"
     ],
 
+    journeys: [
+    "GUIDANCE_PURPOSE",
+    "GUIDANCE_FORGIVENESS"
+],
+
     relatedVerses: [
         { surah: 51, ayah: "56" },
         { surah: 2, ayah: "21" }
@@ -3179,6 +3572,13 @@ const VERSES = [
         "Hope",
         "Divine Will"
     ],
+
+    journeys: [
+    "STRUGGLE_HEART",
+    "ANXIOUS_EVERYTHING",
+    "ANXIOUS_HEALTH",
+    "ANXIOUS_FUTURE"
+],
 
     relatedVerses: [
         { surah: 2, ayah: "117" },
@@ -3229,6 +3629,13 @@ const VERSES = [
         "Hope"
     ],
 
+    journeys: [
+    "STRUGGLE_FUTURE",
+    "ANXIOUS_HEALTH",
+    "ANXIOUS_MONEY",
+    "ANXIOUS_FUTURE"
+],
+
     relatedVerses: [
         { surah: 11, ayah: "115" },
         { surah: 3, ayah: "200" }
@@ -3278,6 +3685,14 @@ const VERSES = [
         "Hope",
         "Allah"
     ],
+    primaryJourney: "GUIDANCE_FORGIVENESS",
+
+    journeys: [
+    "STRUGGLE_HEART",
+    "GUIDANCE_FORGIVENESS",
+    "STRUGGLE_LOST",
+    "ANXIOUS_EVERYTHING"
+],
 
     relatedVerses: [
         { surah: 21, ayah: "87" },
@@ -3325,6 +3740,11 @@ const VERSES = [
         "Taqwa",
         "Peace"
     ],
+
+    journeys: [
+    "GRATEFUL_FAITH",
+    "GUIDANCE_PURPOSE"
+],
 
     relatedVerses: [
         { surah: 32, ayah: "16-17" },
@@ -3375,6 +3795,12 @@ const VERSES = [
         "Tawakkul"
     ],
 
+    journeys: [
+    "ANXIOUS_EVERYTHING",
+    "ANXIOUS_FUTURE",
+    "STRUGGLE_FUTURE"
+],
+
     relatedVerses: [
         { surah: 9, ayah: "51" },
         { surah: 3, ayah: "173" }
@@ -3423,6 +3849,12 @@ const VERSES = [
         "Worship",
         "Humility"
     ],
+
+    journeys: [
+    "STRUGGLE_HEART",
+    "GUIDANCE_FORGIVENESS",
+    "GUIDANCE_PEACE"
+],
 
     relatedVerses: [
         { surah: 2, ayah: "186" },
@@ -3474,6 +3906,13 @@ const VERSES = [
         "Comfort"
     ],
 
+    journeys: [
+    "STRUGGLE_HEART",
+    "ANXIOUS_HEALTH",
+    "ANXIOUS_EVERYTHING",
+    "GUIDANCE_PEACE"
+],
+
     relatedVerses: [
         { surah: 39, ayah: "73" },
         { surah: 3, ayah: "200" }
@@ -3522,6 +3961,12 @@ const VERSES = [
         "Character",
         "Reconciliation"
     ],
+
+    journeys: [
+    "STRUGGLE_FAMILY",
+    "GUIDANCE_FORGIVENESS",
+    "GUIDANCE_PEACE"
+],
 
     relatedVerses: [
         { surah: 24, ayah: "22" },
@@ -3572,6 +4017,10 @@ const VERSES = [
         "Repentance"
     ],
 
+    journeys: [
+    "GUIDANCE_FORGIVENESS"
+],
+
     relatedVerses: [
         { surah: 39, ayah: "53" },
         { surah: 21, ayah: "87" }
@@ -3620,6 +4069,11 @@ const VERSES = [
         "Character",
         "Mercy"
     ],
+
+    journeys: [
+    "STRUGGLE_FAMILY",
+    "GUIDANCE_FORGIVENESS"
+],
 
     relatedVerses: [
         { surah: 24, ayah: "22" },
@@ -3670,6 +4124,11 @@ const VERSES = [
         "Mercy"
     ],
 
+    journeys: [
+    "GUIDANCE_PURPOSE",
+    "GRATEFUL_EVERYTHING"
+],
+
     relatedVerses: [
         { surah: 14, ayah: "7" },
         { surah: 16, ayah: "90" }
@@ -3719,6 +4178,11 @@ const VERSES = [
         "Provision"
     ],
 
+    journeys: [
+    "STRUGGLE_FAMILY",
+    "GRATEFUL_FAMILY"
+],
+
     relatedVerses: [
         { surah: 21, ayah: "89" },
         { surah: 25, ayah: "74" }
@@ -3766,6 +4230,12 @@ const VERSES = [
         "Shaytan",
         "Warning"
     ],
+
+    journeys: [
+    "STRUGGLE_LOST",
+    "GUIDANCE_PEACE",
+    "GUIDANCE_PURPOSE"
+],
 
     relatedVerses: [
         { surah: 13, ayah: "28" },
@@ -3816,6 +4286,12 @@ const VERSES = [
         "Allah"
     ],
 
+    journeys: [
+    "STRUGGLE_FUTURE",
+    "ANXIOUS_FUTURE",
+    "ANXIOUS_EVERYTHING"
+],
+
     relatedVerses: [
         { surah: 3, ayah: "173" },
         { surah: 20, ayah: "46" }
@@ -3864,6 +4340,11 @@ const VERSES = [
         "Mercy",
         "Reconciliation"
     ],
+
+    journeys: [
+    "STRUGGLE_FAMILY",
+    "GUIDANCE_PEACE"
+],
 
     relatedVerses: [
         { surah: 8, ayah: "46" },
@@ -3914,6 +4395,11 @@ const VERSES = [
         "Character"
     ],
 
+    journeys: [
+    "STRUGGLE_FAMILY",
+    "GUIDANCE_FORGIVENESS"
+],
+
     relatedVerses: [
         { surah: 25, ayah: "63" },
         { surah: 17, ayah: "53" }
@@ -3962,6 +4448,11 @@ const VERSES = [
         "Trust",
         "Character"
     ],
+
+    journeys: [
+    "GUIDANCE_FORGIVENESS",
+    "STRUGGLE_FAMILY"
+],
 
     relatedVerses: [
         { surah: 24, ayah: "22" },
@@ -4012,6 +4503,12 @@ const VERSES = [
         "Knowledge"
     ],
 
+    journeys: [
+    "STRUGGLE_HEART",
+    "ANXIOUS_EVERYTHING",
+    "GUIDANCE_PEACE"
+],
+
     relatedVerses: [
         { surah: 2, ayah: "186" },
         { surah: 13, ayah: "28" }
@@ -4060,6 +4557,11 @@ const VERSES = [
         "Faith",
         "Allah"
     ],
+    primaryJourney: "GUIDANCE_PURPOSE",
+
+    journeys: [
+    "GUIDANCE_PURPOSE"
+],
 
     relatedVerses: [
         { surah: 1, ayah: "5-7" },
@@ -4108,6 +4610,13 @@ const VERSES = [
         "Reflection",
         "Thankfulness"
     ],
+    primaryJourney: "GRATEFUL_HEALTH",
+
+    journeys: [
+    "GRATEFUL_EVERYTHING",
+    "GRATEFUL_FAITH",
+    "GRATEFUL_HEALTH"
+],
 
     relatedVerses: [
         { surah: 14, ayah: "7" },
@@ -4158,6 +4667,11 @@ const VERSES = [
         "Priorities"
     ],
 
+    journeys: [
+    "GUIDANCE_PURPOSE",
+    "GRATEFUL_EVERYTHING"
+],
+
     relatedVerses: [
         { surah: 18, ayah: "46" },
         { surah: 28, ayah: "77" }
@@ -4206,6 +4720,11 @@ const VERSES = [
         "Faith",
         "Guidance"
     ],
+
+    journeys: [
+    "GUIDANCE_FORGIVENESS",
+    "GUIDANCE_PURPOSE"
+],
 
     relatedVerses: [
         { surah: 39, ayah: "53" },
@@ -4256,6 +4775,11 @@ const VERSES = [
         "Deeds"
     ],
 
+    journeys: [
+    "GUIDANCE_PURPOSE",
+    "GUIDANCE_FORGIVENESS"
+],
+
     relatedVerses: [
         { surah: 99, ayah: "7-8" },
         { surah: 57, ayah: "20" }
@@ -4304,6 +4828,13 @@ const VERSES = [
         "Patience",
         "Faith"
     ],
+
+    journeys: [
+    "STRUGGLE_HEART",
+    "ANXIOUS_HEALTH",
+    "ANXIOUS_EVERYTHING",
+    "STRUGGLE_FUTURE"
+],
 
     relatedVerses: [
         { surah: 2, ayah: "155-157" },
@@ -4361,6 +4892,12 @@ const VERSES = [
         "Comfort"
     ],
 
+    journeys: [
+    "STRUGGLE_HEART",
+    "STRUGGLE_FUTURE",
+    "GRATEFUL_EVERYTHING"
+],
+
     relatedVerses: [
         { surah: 39, ayah: "53" },
         { surah: 2, ayah: "286" },
@@ -4399,13 +4936,9 @@ const VERSES = [
     ],
 
     lifeSituations: [
-        "Hardship",
-        "Exams",
-        "Career Challenges",
-        "Financial Stress",
-        "Illness",
-        "Recovery",
-        "Long-Term Struggle"
+    "Hardship",
+    "Long-Term Struggle",
+    "Recovery"
     ],
 
     keywords: [
@@ -4416,6 +4949,14 @@ const VERSES = [
         "Relief",
         "Perseverance"
     ],
+    primaryJourney: "ANXIOUS_EVERYTHING",
+
+    journeys: [
+    "STRUGGLE_HEART",
+    "STRUGGLE_FUTURE",
+    "ANXIOUS_EVERYTHING",
+    "ANXIOUS_FUTURE"
+],
 
     relatedVerses: [
         { surah: 2, ayah: "155-157" },
@@ -4467,6 +5008,11 @@ const VERSES = [
         "Creation"
     ],
 
+    journeys: [
+    "STRUGGLE_LOST",
+    "GUIDANCE_PURPOSE"
+],
+
     relatedVerses: [
         { surah: 17, ayah: "70" },
         { surah: 16, ayah: "97" }
@@ -4515,6 +5061,11 @@ const VERSES = [
         "Pen",
         "Education"
     ],
+    primaryJourney: "GUIDANCE_KNOWLEDGE",
+
+    journeys: [
+    "GUIDANCE_KNOWLEDGE"
+],
 
     relatedVerses: [
         { surah: 20, ayah: "114" },
@@ -4565,6 +5116,12 @@ const VERSES = [
         "Mercy",
         "Angels"
     ],
+    primaryJourney: "GRATEFUL_FAITH",
+
+    journeys: [
+    "GUIDANCE_FORGIVENESS",
+    "GRATEFUL_FAITH"
+],
 
     relatedVerses: [
         { surah: 2, ayah: "186" },
@@ -4614,6 +5171,11 @@ const VERSES = [
         "Hereafter",
         "Actions"
     ],
+
+    journeys: [
+    "GUIDANCE_FORGIVENESS",
+    "GUIDANCE_PURPOSE"
+],
 
     relatedVerses: [
         { surah: 59, ayah: "18" },
@@ -4665,6 +5227,11 @@ const VERSES = [
         "Good Deeds"
     ],
 
+    journeys: [
+    "GUIDANCE_PURPOSE",
+    "STRUGGLE_LOST"
+],
+
     relatedVerses: [
         { surah: 3, ayah: "200" },
         { surah: 16, ayah: "97" }
@@ -4711,6 +5278,11 @@ const VERSES = [
         "Faith",
         "Ikhlas"
     ],
+
+    journeys: [
+    "GRATEFUL_FAITH",
+    "GUIDANCE_PURPOSE"
+],
 
     relatedVerses: [
         { surah: 2, ayah: "255" },
@@ -4761,6 +5333,11 @@ const VERSES = [
         "Al-Falaq"
     ],
 
+    journeys: [
+    "ANXIOUS_EVERYTHING",
+    "GUIDANCE_PEACE"
+],
+
     relatedVerses: [
         { surah: 23, ayah: "97-98" },
         { surah: 2, ayah: "255" }
@@ -4809,6 +5386,12 @@ const VERSES = [
         "Refuge",
         "An-Nas"
     ],
+
+    journeys: [
+    "ANXIOUS_EVERYTHING",
+    "STRUGGLE_HEART",
+    "GUIDANCE_PEACE"
+],
 
     relatedVerses: [
         { surah: 23, ayah: "97-98" },

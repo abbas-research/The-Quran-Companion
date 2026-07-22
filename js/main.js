@@ -1,8 +1,15 @@
 const app = document.getElementById("app");
+let questionHistory = [];
+let selectedJourney = "";
+let selectedFocus = "";
 
 showWelcome();
 
 function showWelcome(){
+
+resetProfile();
+
+questionHistory = [];
 document.body.classList.add("homePage");
 requestAnimationFrame(() => {
 
@@ -322,7 +329,25 @@ if(!question){
 
     });
 
-    html += `</div>`;
+    if(questionHistory.length>0){
+
+    html += `
+
+    <div style="margin-top:35px;">
+
+        <button onclick="goBack()">
+
+            ← Back
+
+        </button>
+
+    </div>
+
+    `;
+
+}
+
+html += `</div>`;
 
     app.innerHTML = html;
 
@@ -338,11 +363,40 @@ function selectAnswer(questionId,answerIndex){
 
     if(answer.scores){
 
-        addScores(answer.scores);
+    addScores(answer.scores);
+
+}
+
+if(answer.journey){
+
+    selectedJourney = answer.journey;
+
+}
+
+if(answer.focus){
+
+    selectedFocus = answer.focus;
+
+}
+
+    questionHistory.push(questionId);
+
+    showQuestion(answer.next);
+
+}
+function goBack(){
+
+    if(questionHistory.length===0){
+
+        showWelcome();
+
+        return;
 
     }
 
-    showQuestion(answer.next);
+    const previousQuestion = questionHistory.pop();
+
+    showQuestion(previousQuestion);
 
 }
 
@@ -404,7 +458,32 @@ function renderResult(){
 
 });
 
-    const verse = findVerse();
+    const selectedJourneyId =
+    selectedJourney + "_" + selectedFocus;
+    console.log(selectedJourney);
+console.log(selectedFocus);
+console.log(selectedJourneyId);
+
+const relatedVerses = VERSES.filter(verse =>
+    verse.journeys &&
+    verse.journeys.includes(selectedJourneyId)
+);
+console.log(relatedVerses);
+
+if(relatedVerses.length === 0){
+
+    app.innerHTML = `
+    <div class="resultCard">
+        <h2>No matching verses found.</h2>
+        <button onclick="showWelcome()">Return Home</button>
+    </div>
+    `;
+    return;
+}
+
+const verse =
+    relatedVerses.find(v => v.primaryJourney === selectedJourneyId)
+    || relatedVerses[Math.floor(Math.random() * relatedVerses.length)];
 
 const reflection =
     REFLECTIONS[getHighestTheme()] ||
@@ -463,7 +542,13 @@ ${reflection.text}
 </p>
 
 </div>
+<button onclick="showRelatedVerses('${selectedJourneyId}')">
 
+Show More Related Verses
+
+</button>
+
+<br><br>
 <button onclick="showWelcome()">
 
 Return Home
@@ -482,4 +567,94 @@ Verse of the Day
 </div>
 `;
 window.scrollTo(0,0);
+}
+function showRelatedVerses(journey){
+
+    const verses = VERSES.filter(v =>
+        v.journeys &&
+        v.journeys.includes(journey)
+    );
+
+    let html = `
+
+<div class="topNav">
+
+<div class="siteTitle">
+
+☪ The Quran Companion
+
+</div>
+
+<div class="navLinks">
+
+<a href="#" onclick="showWelcome()">Home</a>
+
+<a href="#" onclick="showVerseOfDay()">Verse of the Day</a>
+
+<a href="#" onclick="showAbout()">About</a>
+
+</div>
+
+</div>
+
+<div class="headerDivider"></div>
+
+<div class="resultCard">
+
+<button onclick="showWelcome()" style="margin-bottom:25px;">
+
+← Return Home
+
+</button>
+
+<h2>Related Verses</h2>
+
+`;
+
+    verses.forEach(verse =>{
+
+        html += `
+
+        <div class="verseCard" style="margin-bottom:30px;">
+
+        <h3>${verse.surahName}</h3>
+
+        <p>
+
+        ${verse.surahNumber}:${verse.ayahStart}${verse.ayahEnd !== verse.ayahStart ? "-" + verse.ayahEnd : ""}
+
+        </p>
+
+        <div class="surahDivider">
+
+        ✦ ❈ ✦
+
+        </div>
+
+        <p>
+
+        ${verse.translation}
+
+        </p>
+
+        </div>
+
+        `;
+
+    });
+
+    html += `
+
+    <button onclick="showWelcome()">
+
+    Return Home
+
+    </button>
+
+    `;
+
+    app.innerHTML = html;
+
+    window.scrollTo(0,0);
+
 }

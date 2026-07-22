@@ -10,6 +10,8 @@ const QUESTIONS = [
         {
     text: "I'm struggling",
 
+journey: "STRUGGLE",
+
     scores:{
 
         themes:{
@@ -39,6 +41,8 @@ const QUESTIONS = [
         {
     text: "I'm anxious",
 
+journey: "ANXIOUS",
+
     scores:{
 
         themes:{
@@ -67,6 +71,7 @@ const QUESTIONS = [
 
         {
     text: "I'm grateful",
+    journey: "GRATEFUL",
 
     scores:{
 
@@ -94,6 +99,7 @@ const QUESTIONS = [
 
         {
     text: "I'm looking for guidance",
+    journey: "GUIDANCE",
 
     scores:{
 
@@ -132,6 +138,7 @@ const QUESTIONS = [
 
         {
             text: "My heart",
+            focus: "HEART",
 
             scores:{
                 themes:{
@@ -155,6 +162,7 @@ const QUESTIONS = [
 
         {
             text:"My family",
+            focus: "FAMILY",
 
             scores:{
                 themes:{
@@ -177,6 +185,7 @@ const QUESTIONS = [
 
         {
             text:"My future",
+            focus: "FUTURE",
 
             scores:{
                 themes:{
@@ -200,6 +209,7 @@ const QUESTIONS = [
 
         {
             text:"I don't know",
+            focus: "LOST",
 
             scores:{
                 themes:{
@@ -232,6 +242,7 @@ const QUESTIONS = [
 
         {
             text: "Money",
+            focus: "MONEY",
 
             scores:{
 
@@ -259,6 +270,7 @@ const QUESTIONS = [
 
         {
             text:"Health",
+            focus: "HEALTH",
 
             scores:{
 
@@ -287,6 +299,7 @@ const QUESTIONS = [
 
         {
             text:"The future",
+            focus: "FUTURE",
 
             scores:{
 
@@ -315,6 +328,7 @@ const QUESTIONS = [
 
         {
             text:"Everything",
+            focus: "EVERYTHING",
 
             scores:{
 
@@ -352,10 +366,121 @@ const QUESTIONS = [
 
     answers: [
 
-        { text: "Family", next: 999 },
-        { text: "Health", next: 999 },
-        { text: "Faith", next: 999 },
-        { text: "Everything", next: 999 }
+        {
+            text:"Family",
+            focus: "FAMILY",
+
+            scores:{
+
+                themes:{
+                    Gratitude:5,
+                    Mercy:2
+                },
+
+                emotions:{
+                    Grateful:4
+                },
+
+                situations:{
+                    "Family Blessings":5
+                },
+
+                keywords:{
+                    Family:4,
+                    Gratitude:3
+                }
+
+            },
+
+            next:999
+        },
+
+        {
+            text:"Health",
+            focus: "HEALTH",
+
+            scores:{
+
+                themes:{
+                    Gratitude:5,
+                    Hope:2
+                },
+
+                emotions:{
+                    Grateful:4
+                },
+
+                situations:{
+                    "Health":5
+                },
+
+                keywords:{
+                    Healing:3,
+                    Gratitude:3
+                }
+
+            },
+
+            next:999
+        },
+
+        {
+            text:"Faith",
+            focus: "FAITH",
+
+            scores:{
+
+                themes:{
+                    Gratitude:4,
+                    Trust:4,
+                    Guidance:2
+                },
+
+                emotions:{
+                    Grateful:4
+                },
+
+                situations:{
+                    "Faith":5
+                },
+
+                keywords:{
+                    Faith:5
+                }
+
+            },
+
+            next:999
+        },
+
+        {
+            text:"Everything",
+            focus: "EVERYTHING",
+
+            scores:{
+
+                themes:{
+                    Gratitude:6,
+                    Mercy:3,
+                    Hope:2
+                },
+
+                emotions:{
+                    Grateful:5
+                },
+
+                situations:{
+                    "Daily Reflection":5
+                },
+
+                keywords:{
+                    Gratitude:5
+                }
+
+            },
+
+            next:999
+        }
 
     ]
 },
@@ -367,10 +492,122 @@ const QUESTIONS = [
 
     answers: [
 
-        { text: "Purpose", next: 999 },
-        { text: "Knowledge", next: 999 },
-        { text: "Forgiveness", next: 999 },
-        { text: "Peace", next: 999 }
+        {
+            text:"Purpose",
+            focus: "PURPOSE",
+
+            scores:{
+
+                themes:{
+                    Guidance:5
+                },
+
+                emotions:{
+                    Lost:3,
+                    Confused:2
+                },
+
+                situations:{
+                    "Seeking Guidance":5
+                },
+
+                keywords:{
+                    Guidance:4
+                }
+
+            },
+
+            next:999
+        },
+
+        {
+            text:"Knowledge",
+            focus: "KNOWLEDGE",
+
+            scores:{
+
+                themes:{
+                    Guidance:4
+                },
+
+                emotions:{
+                    Curious:3
+                },
+
+                situations:{
+                    "Seeking Knowledge":5
+                },
+
+                keywords:{
+                    Knowledge:5
+                }
+
+            },
+
+            next:999
+        },
+
+        {
+            text:"Forgiveness",
+            focus: "FORGIVENESS",
+
+            scores:{
+
+                themes:{
+                    Mercy:6
+                },
+
+                emotions:{
+                    Guilty:4,
+                    Regretful:4,
+                    "Seeking Forgiveness":3
+                },
+
+                situations:{
+                    "Seeking Forgiveness":6,
+                    "Repentance":5,
+                    "After Sin":5,
+                    "Returning to Allah":4
+                },
+
+                keywords:{
+                    Forgiveness:5,
+                    Repentance:4,
+                    Mercy:3
+                }
+
+            },
+
+            next:999
+        },
+
+        {
+            text:"Peace",
+            focus: "PEACE",
+
+            scores:{
+
+                themes:{
+                    Peace:6,
+                    Trust:2
+                },
+
+                emotions:{
+                    "Seeking Peace":4
+                },
+
+                situations:{
+                    "Spiritual Healing":4
+                },
+
+                keywords:{
+                    Peace:5
+                }
+
+            },
+
+            next:999
+        }
 
     ]
 }

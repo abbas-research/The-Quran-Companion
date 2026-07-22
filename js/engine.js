@@ -10,6 +10,18 @@ const profile = {
 
 };
 
+function resetProfile(){
+
+    profile.themes = {};
+
+    profile.emotions = {};
+
+    profile.situations = {};
+
+    profile.keywords = {};
+
+}
+
 function addScores(scores){
 
     if(scores.themes){
@@ -83,80 +95,24 @@ function getHighestTheme(){
 
 }
 
-function findVerse(){
+function findVerse(selectedJourneyId){
 
-    let bestVerse = null;
+    const bestVerses = VERSES.filter(verse =>
+    verse.journeys &&
+    verse.journeys.includes(selectedJourneyId)
+);
 
-    let highestScore = -1;
+if(bestVerses.length === 0){
 
-    for(const verse of VERSES){
+    return VERSES[0];
 
-        let score = 0;
+}
 
-        /* ---------- THEMES ---------- */
+const randomIndex =
+    Math.floor(Math.random() * bestVerses.length);
 
-        for(const questionnaireTheme in profile.themes){
+console.log("Selected Verse:", bestVerses[randomIndex]);
 
-            const mappedThemes =
-                THEME_MAP[questionnaireTheme] || [];
-
-            for(const mappedTheme of mappedThemes){
-
-                if(verse.themes.includes(mappedTheme)){
-
-                    score += profile.themes[questionnaireTheme] * 2;
-
-                }
-
-            }
-
-        }
-
-        /* ---------- EMOTIONS ---------- */
-
-        for(const emotion in profile.emotions){
-
-            if(verse.emotions.includes(emotion)){
-
-                score += profile.emotions[emotion] * 3;
-
-            }
-
-        }
-
-        /* ---------- LIFE SITUATIONS ---------- */
-
-        for(const situation in profile.situations){
-
-            if(verse.lifeSituations.includes(situation)){
-
-                score += profile.situations[situation] * 5;
-
-            }
-
-        }
-
-        /* ---------- KEYWORDS ---------- */
-
-        for(const keyword in profile.keywords){
-
-            if(verse.keywords.includes(keyword)){
-
-                score += profile.keywords[keyword];
-
-            }
-
-        }
-
-        if(score > highestScore){
-
-            highestScore = score;
-            bestVerse = verse;
-
-        }
-
-    }
-
-    return bestVerse || VERSES[0];
+return bestVerses[randomIndex];
 
 }
