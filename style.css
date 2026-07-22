@@ -570,6 +570,16 @@ body.homePage{
     overflow:hidden;
 
 }
+
+@media (max-width:768px){
+
+    body.homePage{
+
+        overflow-y:auto;
+
+    }
+
+}
 /* ===========================
    GUIDANCE LOADING
 =========================== */
