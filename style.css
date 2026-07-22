@@ -801,6 +801,36 @@ button{
 
 }
 
+/* Mobile ornament fixes */
+
+.resultCard::before{
+
+    top:14px;
+
+    left:14px;
+
+    font-size:22px;
+
+}
+
+.resultCard::after{
+
+    bottom:14px;
+
+    right:14px;
+
+    font-size:22px;
+
+}
+
+.reflectionCard::before{
+
+    top:-16px;
+
+    font-size:18px;
+
+}
+
 }
 .emailAddress{
 
