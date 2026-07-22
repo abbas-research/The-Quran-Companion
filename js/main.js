@@ -341,6 +341,30 @@ if(!question){
 
         </button>
 
+        <br><br>
+
+        <button onclick="showWelcome()">
+
+            Return Home
+
+        </button>
+
+    </div>
+
+    `;
+
+}else{
+
+    html += `
+
+    <div style="margin-top:35px;">
+
+        <button onclick="showWelcome()">
+
+            Return Home
+
+        </button>
+
     </div>
 
     `;
