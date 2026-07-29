@@ -3,8 +3,9 @@
 QURAN GUIDANCE DATABASE (QGD)
 
 Translation Source:
-Holy Quran - English Translation
-Ali Quli Qara'i
+The Meaning of the Glorious Qur'an
+Mohammed Marmaduke Pickthall
+First published 1930
 
 Purpose:
 This database indexes Qur'anic verses according to
@@ -14,7 +15,7 @@ Rules:
 
 1. Never modify the translation.
 2. Never paraphrase the translation.
-3. Every translation must match the source exactly.
+3. Every translation must match Pickthall exactly.
 4. Themes are our own indexing.
 5. Moods are our own indexing.
 6. Life situations are our own indexing.
@@ -33,8 +34,7 @@ const VERSES = [
     ayahEnd: 7,
 
     translation:
-        "You ˹alone˺ we worship and You ˹alone˺ we ask for help. Guide us along the Straight Path, the Path of those You have blessed—not those You are displeased with, or those who are astray.",
-
+        "Thee (alone) we worship; Thee (alone) we ask for help. Show us the straight path, The path of those whom Thou hast favoured; Not the (path) of those who earn Thine anger nor of those who go astray.",
     themes: [
         "Guidance",
         "Worship",
@@ -89,7 +89,7 @@ const VERSES = [
     ayahEnd: 2,
 
     translation:
-        "This is the Book! There is no doubt about it—a guide for those mindful ˹of Allah˺.",
+        "This is the Scripture whereof there is no doubt, a guidance unto those who ward off (evil).",
 
     themes: [
         "Guidance",
@@ -139,7 +139,7 @@ const VERSES = [
     ayahEnd: 46,
 
     translation:
-        "And seek help through patience and prayer. Indeed, it is a burden except for the humble—those who are certain that they will meet their Lord and to Him they will return.",
+        "Seek help in patience and prayer; and truly it is hard save for the humble- minded, Who know that they will have to meet their Lord, and that unto Him they are returning.",
 
     themes: [
         "Patience",
@@ -196,7 +196,7 @@ const VERSES = [
     ayahEnd: 152,
 
     translation:
-        "Remember Me; I will remember you. And thank Me, and never be ungrateful.",
+        "Therefore remember Me, I will remember you. Give thanks to Me, and reject not Me.",
 
     themes: [
         "Gratitude",
@@ -249,7 +249,7 @@ const VERSES = [
     ayahEnd: 153,
 
     translation:
-        "O believers! Seek comfort in patience and prayer. Allah is truly with those who are patient.",
+        "O ye who believe! Seek help in steadfastness and prayer. Lo! Allah is with the steadfast.",
 
     themes: [
         "Patience",
@@ -307,7 +307,7 @@ const VERSES = [
     ayahEnd: 157,
 
     translation:
-        "We will certainly test you with a touch of fear and famine and loss of property, life, and crops. Give good news to those who patiently endure—who say, when struck by a disaster, “Surely to Allah we belong and to Him we will ˹all˺ return.”",
+        "And surely We shall try you with something of fear and hunger, and loss of wealth and lives and crops; but give glad tidings to the steadfast, Who say, when a misfortune striketh them: Lo! we are Allah's and lo! unto Him we are returning. Such are they on whom are blessings from their Lord, and mercy. Such are the rightly guided.",
 
     themes: [
         "Trials",
@@ -366,7 +366,7 @@ const VERSES = [
     ayahEnd: 186,
 
     translation:
-        "When My servants ask you ˹O Prophet˺ about Me: I am truly near. I respond to one’s prayer when they call upon Me. So let them respond ˹with obedience˺ to Me and believe in Me, perhaps they will be guided ˹to the Right Way˺.",
+        "And when My servants question thee concerning Me, then surely I am nigh. I answer the prayer of the suppliant when he crieth unto Me. So let them hear My call and let them trust in Me, in order that they may be led aright.",
 
     themes: [
         "Du'a",
@@ -424,7 +424,7 @@ const VERSES = [
     ayahEnd: 201,
 
     translation:
-        "Yet there are others who say, “Our Lord! Grant us the good of this world and the Hereafter, and protect us from the torment of the Fire.”",
+        'And of them (also) is he who saith: "Our Lord! Give unto us in the world that which is good and in the Hereafter that which is good, and guard us from the doom of Fire."',
 
     themes: [
         "Balanced Life",
@@ -476,7 +476,7 @@ const VERSES = [
     ayahEnd: 255,
 
     translation:
-        "Allah! There is no god ˹worthy of worship˺ except Him, the Ever-Living, All-Sustaining. Neither drowsiness nor sleep overtakes Him. To Him belongs whatever is in the heavens and whatever is on the earth. Who could possibly intercede with Him without His permission? He ˹fully˺ knows what is ahead of them and what is behind them, but no one can grasp any of His knowledge—except what He wills ˹to reveal˺. His Seat encompasses the heavens and the earth, and the preservation of both does not tire Him. For He is the Most High, the Greatest.",
+        "Allah! There is no God save Him, the Alive, the Eternal. Neither slumber nor sleep overtaketh Him. Unto Him belongeth whatsoever is in the heavens and whatsoever is in the earth. Who is he that intercedeth with Him save by His leave? He knoweth that which is in front of them and that which is behind them, while they encompass nothing of His knowledge save what He will. His throne includeth the heavens and the earth, and He is never weary of preserving them. He is the Sublime, the Tremendous.",
 
     themes: [
         "Allah's Greatness",
@@ -509,10 +509,10 @@ const VERSES = [
     ],
 
     journeys: [
-    "GUIDANCE_PEACE",
-    "ANXIOUS_EVERYTHING",
-    "GRATEFUL_FAITH"
-],
+        "GUIDANCE_PEACE",
+        "ANXIOUS_EVERYTHING",
+        "GRATEFUL_FAITH"
+    ],
 
     relatedVerses: [
         { surah: 112, ayah: "1-4" },
@@ -530,7 +530,7 @@ const VERSES = [
     ayahEnd: 286,
 
     translation:
-        "Allah does not require of any soul more than what it can afford. All good will be for its own benefit, and all evil will be to its own loss. ˹The believers pray,˺ “Our Lord! Do not punish us if we forget or make a mistake. Our Lord! Do not place a burden on us like the one you placed on those before us. Our Lord! Do not burden us with what we cannot bear. Pardon us, forgive us, and have mercy on us. You are our ˹only˺ Guardian. So grant us victory over the disbelieving people.”",
+    "Allah tasketh not a soul beyond its scope. For it (is only) that which it hath earned, and against it (only) that which it hath deserved. Our Lord! Condemn us not if we forget, or miss the mark! Our Lord! Lay not on us such a burden as thou didst lay on those before us! Our Lord! Impose not on us that which we have not the strength to bear! Pardon us, absolve us and have mercy on us, Thou, our Protector, and give us victory over the disbelieving folk.",
 
     themes: [
         "Hope",
@@ -591,7 +591,7 @@ const VERSES = [
     ayahEnd: 139,
 
     translation:
-        "Do not falter or grieve, for you will have the upper hand, if you are ˹true˺ believers.",
+    "Faint not nor grieve, for ye will overcome them if ye are (indeed) believers.",
 
     themes: [
         "Hope",
@@ -648,7 +648,7 @@ const VERSES = [
     ayahEnd: 159,
 
     translation:
-        "It is out of Allah’s mercy that you ˹O Prophet˺ have been lenient with them. Had you been cruel or hard-hearted, they would have certainly abandoned you. So pardon them, ask Allah’s forgiveness for them, and consult with them in ˹conducting˺ matters. Once you make a decision, put your trust in Allah. Surely Allah loves those who trust in Him.",
+    "It was by the mercy of Allah that thou wast lenient with them (O Muhammad), for if thou hadst been stern and fierce of heart they would have dispersed from round about thee. So pardon them and ask forgiveness for them and consult with them upon the conduct of affairs. And when thou art resolved, then put thy trust in Allah. Lo! Allah loveth those who put their trust (in Him).",
 
     themes: [
         "Mercy",
@@ -704,8 +704,8 @@ const VERSES = [
     ayahEnd: 173,
 
     translation:
-        "Those who were warned, “Your enemies have mobilized their forces against you, so fear them,” the warning only made them grow stronger in faith and they replied, “Allah ˹alone˺ is sufficient ˹as an aid˺ for us and ˹He˺ is the best Protector.”",
-
+    "Those unto whom men said: Lo! the people have gathered against you, therefor fear them. (The threat of danger) but increased the faith of them and they cried: Allah is Sufficient for us! Most Excellent is He in Whom we trust!",
+   
     themes: [
         "Trust in Allah",
         "Faith",
@@ -758,9 +758,8 @@ const VERSES = [
     ayahStart: 200,
     ayahEnd: 200,
 
-    translation:
-        "O believers! Patiently endure, persevere, stand on guard, and be mindful of Allah, so you may be successful.",
-
+   translation:
+    "O ye who believe! Endure, outdo all others in endurance, be ready, and observe your duty to Allah, in order that ye may succeed.",
     themes: [
         "Patience",
         "Perseverance",
@@ -813,9 +812,9 @@ const VERSES = [
     ayahStart: 46,
     ayahEnd: 46,
 
-    translation:
-        "Obey Allah and His Messenger and do not dispute with one another, or you would be discouraged and weakened. Persevere! Surely Allah is with those who persevere.",
-
+   translation:
+    "And obey Allah and His messenger, and dispute not one with another lest ye falter and your strength depart from you; but be steadfast! Lo! Allah is with the steadfast.",
+    
     themes: [
         "Unity",
         "Patience",
@@ -865,8 +864,8 @@ const VERSES = [
     ayahEnd: 66,
 
     translation:
-        "Now Allah has lightened your burden, for He knows that there is weakness in you. So if there are a hundred steadfast among you, they will overcome two hundred. And if there be one thousand, they will overcome two thousand, by Allah’s Will. And Allah is with the steadfast.",
-
+    "Now hath Allah lightened your burden, for He knoweth that there is weakness in you. So if there be of you a steadfast hundred they shall overcome two hundred, and if there be of you a thousand (steadfast) they shall overcome two thousand by permission of Allah. Allah is with the steadfast.",
+   
     themes: [
         "Mercy",
         "Strength",
@@ -916,8 +915,7 @@ const VERSES = [
     ayahEnd: 51,
 
     translation:
-        "Say, “Nothing will ever befall us except what Allah has destined for us. He is our Protector.” So in Allah let the believers put their trust.",
-
+    "Say: Naught befalleth us save that which Allah hath decreed for us. He is our Protecting Friend. In Allah let believers put their trust!",
     themes: [
         "Trust in Allah",
         "Destiny",
@@ -969,9 +967,8 @@ const VERSES = [
     ayahStart: 57,
     ayahEnd: 57,
 
-    translation:
-        "O humanity! Indeed, there has come to you a warning from your Lord, a cure for what is in the hearts, a guide, and a mercy for the believers.",
-
+   translation:
+    "O mankind! There hath come unto you an exhortation from your Lord, a balm for that which is in the breasts, a guidance and a mercy for believers.",
     themes: [
         "Healing",
         "Guidance",
@@ -1024,8 +1021,7 @@ const VERSES = [
     ayahEnd: 6,
 
     translation:
-        "There is no moving creature on earth whose provision is not guaranteed by Allah. And He knows where it lives and where it is laid to rest. All is ˹written˺ in a perfect Record.",
-
+    "And there is not a beast in the earth but the sustenance thereof dependeth on Allah. He knoweth its habitation and its repository. All is in a clear Record.",
     themes: [
         "Provision",
         "Trust in Allah",
@@ -1075,8 +1071,8 @@ const VERSES = [
     ayahStart: 115,
     ayahEnd: 115,
 
-    translation:
-        "And be patient! Certainly Allah does not discount the reward of the good-doers.",
+   translation:
+    "And have patience, (O Muhammad), for lo! Allah loseth not the wages of the good.",
 
     themes: [
         "Patience",
@@ -1132,8 +1128,7 @@ const VERSES = [
     ayahEnd: 18,
 
     translation:
-        "And they brought his shirt, stained with false blood. He responded, “No! Your souls must have tempted you to do something ˹evil˺. So ˹I can only endure with˺ beautiful patience! It is Allah’s help that I seek to bear your claims.”",
-
+    "And they came with false blood on his shirt. He said: Nay, but your minds have beguiled you into something. (My course is) comely patience. And Allah it is Whose help is to be sought in that (predicament) which ye describe.",
     themes: [
         "Beautiful Patience",
         "Trust in Allah",
@@ -1184,8 +1179,7 @@ const VERSES = [
     ayahEnd: 83,
 
     translation:
-        "He cried, “No! Your souls must have tempted you to do something ˹evil˺. So ˹I am left with nothing but˺ beautiful patience! I trust Allah will return them all to me. Surely He ˹alone˺ is the All-Knowing, All-Wise.”",
-
+    "He said: Nay, but your minds have beguiled you into something. (My course is) comely patience! It may be that Allah will bring them all unto me. Lo! He, only He, is the Knower, the Wise.",
     themes: [
         "Beautiful Patience",
         "Hope",
@@ -1236,8 +1230,7 @@ const VERSES = [
     ayahEnd: 87,
 
     translation:
-        "O my sons! Go and search ˹diligently˺ for Joseph and his brother. And do not lose hope in the mercy of Allah, for no one loses hope in Allah’s mercy except those with no faith.",
-
+    "Go, O my sons, and ascertain concerning Joseph and his brother, and despair not of the Spirit of Allah. Lo! none despaireth of the Spirit of Allah save disbelieving folk.",
     themes: [
         "Hope",
         "Mercy",
@@ -1292,8 +1285,7 @@ const VERSES = [
     ayahEnd: 11,
 
     translation:
-        "For each one there are successive angels before and behind, protecting them by Allah’s command. Indeed, Allah would never change a people’s state ˹of favour˺ until they change their own state ˹of faith˺. And if it is Allah’s Will to torment a people, it can never be averted, nor can they find a protector other than Him.",
-
+    "For him are angels ranged before him and behind him, who guard him by Allah's command. Lo! Allah changeth not the condition of a folk until they (first) change that which is in their hearts; and if Allah willeth misfortune for a folk there is none that can repel it, nor have they a defender beside Him.",
     themes: [
         "Personal Responsibility",
         "Change",
@@ -1343,8 +1335,7 @@ const VERSES = [
     ayahEnd: 28,
 
     translation:
-        "Those who believe and whose hearts find comfort in the remembrance of Allah. Surely in the remembrance of Allah do hearts find comfort.",
-
+    "Who have believed and whose hearts have rest in the remembrance of Allah. Verily in the remembrance of Allah do hearts find rest!",
     themes: [
         "Remembrance of Allah",
         "Inner Peace",
@@ -1397,7 +1388,7 @@ const VERSES = [
     ayahEnd: 39,
 
     translation:
-        "Allah eliminates and confirms what He wills, and with Him is the Master Record.",
+    "Allah effaceth what He will, and establisheth (what He will), and with Him is the source of ordinance.",
 
     themes: [
         "Allah's Wisdom",
@@ -1446,8 +1437,7 @@ const VERSES = [
     ayahEnd: 7,
 
     translation:
-        "And ˹remember˺ when your Lord proclaimed, ‘If you are grateful, I will certainly give you more. But if you are ungrateful, surely My punishment is severe.’",
-
+    "And when your Lord proclaimed: If ye give thanks, I will give you more; but if ye are thankless, lo! My punishment is dire.",
     themes: [
         "Gratitude",
         "Blessings",
@@ -1497,8 +1487,7 @@ const VERSES = [
     ayahEnd: 27,
 
     translation:
-        "Do you not see how Allah compares a good word to a good tree? Its root is firm and its branches reach the sky, ˹always˺ yielding its fruit in every season by the Will of its Lord. This is how Allah sets forth parables for the people, so perhaps they will be mindful. And the parable of an evil word is that of an evil tree, uprooted from the earth, having no stability. Allah makes the believers steadfast with the firm Word ˹of faith˺ in this worldly life and the Hereafter. And Allah leaves the wrongdoers to stray. For Allah does what He wills.",
-
+    "Seest thou not how Allah coineth a similitude: A goodly saying, as a goodly tree, its root set firm, its branches reaching into heaven,",
     themes: [
         "Faith",
         "Good Character",
@@ -1548,8 +1537,7 @@ const VERSES = [
     ayahEnd: 34,
 
     translation:
-        "And He has granted you all that you asked Him for. If you tried to count Allah’s blessings, you would never be able to number them. Indeed humankind is truly unfair, ˹totally˺ ungrateful.",
-
+    "And He giveth you of all ye ask of Him, and if ye would count the bounty of Allah ye cannot reckon it. Lo! man is verily a wrong-doer, an ingrate.",
     themes: [
         "Gratitude",
         "Blessings",
@@ -1596,9 +1584,8 @@ const VERSES = [
     ayahStart: 42,
     ayahEnd: 43,
 
-    translation:
-        "Do not think ˹O Prophet˺ that Allah is unaware of what the wrongdoers do. He only delays them until a Day when ˹their˺ eyes will stare in horror—rushing forth, heads raised, never blinking, hearts void.",
-
+   translation:
+    "Deem not that Allah is unaware of what the wicked do. He but giveth them a respite till a day when eyes will stare (in terror),\nAs they come hurrying on in fear, their heads upraised, their gaze returning not to them, and their hearts as air.",
     themes: [
         "Justice",
         "Accountability",
@@ -1646,8 +1633,7 @@ const VERSES = [
     ayahEnd: 90,
 
     translation:
-        "Indeed, Allah commands justice, grace, as well as generosity to close relatives. He forbids indecency, wickedness, and aggression. He instructs you so perhaps you will be mindful.",
-
+    "Lo! Allah enjoineth justice and kindness, and giving to kinsfolk, and forbiddeth lewdness and abomination and wickedness. He exhorteth you in order that ye may take heed.",
     themes: [
         "Justice",
         "Kindness",
@@ -1697,8 +1683,7 @@ const VERSES = [
     ayahEnd: 97,
 
     translation:
-        "Whoever does good, whether male or female, and is a believer, We will surely bless them with a good life, and We will certainly reward them according to the best of their deeds.",
-
+    "Whosoever doeth right, whether male or female, and is a believer, him verily we shall quicken with good life, and We shall pay them a recompense in proportion to the best of what they used to do.",
     themes: [
         "Good Deeds",
         "Reward",
@@ -1749,8 +1734,7 @@ const VERSES = [
     ayahEnd: 24,
 
     translation:
-        "For your Lord has decreed that you worship none but Him. And honour your parents. If one or both of them reach old age in your care, never say to them ˹even˺ ‘ugh,’ nor yell at them. Rather, address them respectfully. And be humble with them out of mercy, and pray, “My Lord! Be merciful to them as they raised me when I was young.”",
-
+    "Thy Lord hath decreed, that ye worship none save Him, and (that ye show) kindness to parents. If one of them or both of them attain old age with thee, say not \"Fie\" unto them nor repulse them, but speak unto them a gracious word.\nAnd lower unto them the wing of submission through mercy, and say: My Lord! Have mercy on them both as they did care for me when I was little.",
     themes: [
         "Parents",
         "Kindness",
@@ -1801,7 +1785,7 @@ const VERSES = [
     ayahEnd: 53,
 
     translation:
-        "Tell My ˹believing˺ servants to say only what is best. Satan certainly seeks to sow discord among them. Satan is indeed a sworn enemy to humankind.",
+    "Tell My bondmen to speak that which is kindlier. Lo! the devil soweth discord among them. Lo! the devil is for man an open foe.",
 
     themes: [
         "Good Speech",
@@ -1853,8 +1837,7 @@ const VERSES = [
     ayahEnd: 70,
 
     translation:
-        "Indeed, We have dignified the children of Adam, carried them on land and sea, granted them good and lawful provisions, and privileged them far above many of Our creatures.",
-
+    "Verily we have honoured the Children of Adam. We carry them on the land and the sea, and have made provision of good things for them, and have preferred them above many of those whom We created with a marked preferment.",
     themes: [
         "Human Dignity",
         "Blessings",
@@ -1903,8 +1886,8 @@ const VERSES = [
     ayahStart: 10,
     ayahEnd: 10,
 
-    translation:
-        "˹Remember˺ when those youths took refuge in the cave, and said, “Our Lord! Grant us mercy from Yourself and guide us rightly through our ordeal.”",
+   translation:
+    "When the young men fled for refuge to the Cave and said: Our Lord! Give us mercy from Thy presence, and shape for us right conduct in our plight.",
 
     themes: [
         "Guidance",
@@ -1956,8 +1939,7 @@ const VERSES = [
     ayahEnd: 28,
 
     translation:
-        "And patiently stick with those who call upon their Lord morning and evening, seeking His pleasure. Do not let your eyes look beyond them, desiring the luxuries of this worldly life. And do not obey those whose hearts We have made heedless of Our remembrance, who follow ˹only˺ their desires and whose state is ˹total˺ loss.",
-
+    "Restrain thyself along with those who cry unto their Lord at morn and evening, seeking His Countenance; and let not thine eyes overlook them, desiring the pomp of the life of the world; and obey not him whose heart We have made heedless of Our remembrance, who followeth his own lust and whose case hath been abandoned.",
     themes: [
         "Patience",
         "Companionship",
@@ -2008,8 +1990,7 @@ const VERSES = [
     ayahEnd: 46,
 
     translation:
-        "Wealth and children are the adornment of this worldly life, but the everlasting good deeds are far better with your Lord in reward and in hope.",
-
+    "Wealth and children are an ornament of the life of the world. But the good deeds which endure are better in thy Lord's sight for reward, and better in respect of hope.",
     themes: [
         "Good Deeds",
         "Hereafter",
@@ -2060,8 +2041,7 @@ const VERSES = [
     ayahEnd: 109,
 
     translation:
-        "Say, ˹O Prophet,˺ “If the ocean were ink for ˹writing˺ the Words of my Lord, it would certainly run out before the Words of my Lord were finished, even if We refilled it with its equal.”",
-
+    "Say: Though the sea became ink for the Words of my Lord, verily the sea would be used up before the Words of my Lord were exhausted, even though We brought the like thereof to help.",
     themes: [
         "Knowledge",
         "Greatness of Allah",
@@ -2110,8 +2090,7 @@ const VERSES = [
     ayahEnd: 114,
 
     translation:
-        "Exalted is Allah, the True King! Do not rush to recite ˹a revelation of˺ the Quran ˹O Prophet˺ before it is ˹properly˺ conveyed to you, and pray, “My Lord! Increase me in knowledge.”",
-
+    "Then exalted be Allah, the True King! And hasten not (O Muhammad) with the Qur'an ere its revelation hath been perfected unto thee, and say: My Lord! Increase me in knowledge.",
     themes: [
         "Knowledge",
         "Learning",
@@ -2160,7 +2139,7 @@ const VERSES = [
     ayahEnd: 28,
 
     translation:
-        "Moses prayed, “My Lord! Uplift my heart for me, and make my task easy, and remove the impediment from my tongue so people may understand my speech,”",
+    "(Moses) said: My Lord! relieve my mind\nAnd ease my task for me;\nAnd loose a knot from my tongue,\nThat they may understand my saying.",
 
     themes: [
         "Du'a",
@@ -2215,8 +2194,8 @@ const VERSES = [
     ayahStart: 46,
     ayahEnd: 46,
 
-    translation:
-        "Allah reassured ˹them˺, “Have no fear! I am with you, hearing and seeing.”",
+   translation:
+    "He said: Fear not. Lo! I am with you twain, Hearing and Seeing.",
 
     themes: [
         "Courage",
@@ -2269,9 +2248,8 @@ const VERSES = [
     ayahStart: 132,
     ayahEnd: 132,
 
-    translation:
-        "Bid your people to pray, and be diligent in ˹observing˺ it. We do not ask you to provide. It is We Who provide for you. And the ultimate outcome is ˹only˺ for ˹the people of˺ righteousness.",
-
+   translation:
+    "And enjoin upon thy people worship, and be constant therein. We ask not of thee a provision: We provided for thee. And the sequel is for righteousness.",
     themes: [
         "Prayer",
         "Provision",
@@ -2322,8 +2300,7 @@ const VERSES = [
     ayahEnd: 84,
 
     translation:
-        "And ˹remember˺ when Job cried out to his Lord, “I have been touched with adversity, and You are the Most Merciful of the merciful.” So We answered his prayer and removed his adversity, and gave him back his family, twice as many, as a mercy from Us and a lesson for the ˹devoted˺ worshippers.",
-
+    "And Job, when he cried unto his Lord, (saying): Lo! adversity afflicteth me, and Thou art Most Merciful of all who show mercy.\nThen We heard his prayer and removed that adversity from which he suffered, and We gave him his household (that he had lost) and the like thereof along with them, a mercy from Our store, and a remembrance for the worshippers;",
     themes: [
         "Patience",
         "Mercy",
@@ -2375,9 +2352,8 @@ const VERSES = [
     ayahStart: 87,
     ayahEnd: 87,
 
-    translation:
-        "And ˹remember˺ when the Man of the Whale stormed off ˹from his city˺ in a rage, thinking We would not restrain him. Then in the ˹veils of˺ darkness he cried out, “There is no god ˹worthy of worship˺ except You. Glory be to You! I have certainly done wrong.”",
-
+   translation:
+    "And (mention) Dhu'n-Nun, when he went off in anger and deemed that We had no power over him, but he cried out in the darkness, saying: There is no God save Thee. Be Thou Glorified! Lo! I have been a wrong-doer.",
     themes: [
         "Repentance",
         "Humility",
@@ -2428,8 +2404,7 @@ const VERSES = [
     ayahEnd: 89,
 
     translation:
-        "And ˹remember˺ when Zachariah cried out to his Lord, “My Lord! Do not leave me childless, though You are the Best of Successors.”",
-
+    "And Zachariah, when he cried unto his Lord: My Lord! Leave me not childless, though Thou art the Best of inheritors.",
     themes: [
         "Du'a",
         "Hope",
@@ -2479,7 +2454,7 @@ const VERSES = [
     ayahEnd: 107,
 
     translation:
-        "We have sent you ˹O Prophet˺ only as a mercy for the whole world.",
+    "We sent thee not save as a mercy for the peoples.",
 
     themes: [
         "Mercy",
@@ -2529,8 +2504,7 @@ const VERSES = [
     ayahEnd: 46,
 
     translation:
-        "Have they not travelled throughout the land so their hearts may reason, and their ears may listen? Indeed, it is not the eyes that are blind, but it is the hearts in the chests that grow blind.",
-
+    "Have they not travelled in the land, and have they hearts wherewith to feel and ears wherewith to hear? For indeed it is not the eyes that grow blind, but it is the hearts, which are within the bosoms, that grow blind.",
     themes: [
         "Reflection",
         "Wisdom",
@@ -2581,7 +2555,7 @@ const VERSES = [
     ayahEnd: 77,
 
     translation:
-        "O believers! Bow down, prostrate yourselves, worship your Lord, and do ˹what is˺ good so that you may be successful.",
+    "O ye who believe! Bow down and prostrate yourselves, and worship your Lord, and do good, that haply ye may prosper.",
 
     themes: [
         "Worship",
@@ -2632,7 +2606,7 @@ const VERSES = [
     ayahEnd: 98,
 
     translation:
-        "And say, “My Lord! I seek refuge in You from the temptations of the devils. And I seek refuge in You, my Lord, that they ˹even˺ come near me.”",
+    "And say: My Lord! I seek refuge in Thee from suggestions of the evil ones,\nAnd I seek refuge in Thee, my Lord, lest they be present with me,",
 
     themes: [
         "Protection",
@@ -2683,8 +2657,7 @@ const VERSES = [
     ayahEnd: 22,
 
     translation:
-        "Do not let the people of virtue and affluence among you swear to suspend donations to their relatives, the needy, and the emigrants in the cause of Allah. Let them pardon and forgive. Do you not love to be forgiven by Allah? And Allah is All-Forgiving, Most Merciful.",
-
+    "And let not those who possess dignity and ease among you swear not to give to the near of kin and to the needy, and to fugitives for the cause of Allah. Let them forgive and show indulgence. Yearn ye not that Allah may forgive you? Allah is Forgiving, Merciful.",
     themes: [
         "Forgiveness",
         "Mercy",
@@ -2738,8 +2711,7 @@ const VERSES = [
     ayahEnd: 63,
 
     translation:
-        "The ˹true˺ servants of the Most Compassionate are those who walk on the earth humbly, and when the foolish address them ˹improperly˺, they only respond with peace.",
-
+    "The (faithful) slaves of the Beneficent are they who walk upon the earth modestly, and when the foolish ones address them answer: Peace;",
     themes: [
         "Humility",
         "Patience",
@@ -2791,7 +2763,7 @@ const VERSES = [
     ayahEnd: 74,
 
     translation:
-        "˹They are˺ those who pray, “Our Lord! Bless us with ˹pious˺ spouses and offspring who will be the joy of our hearts, and make us models for the righteous.”",
+    "And who say: Our Lord! Vouchsafe us comfort of our wives and of our offspring, and make us patterns for (all) those who ward off (evil).",
 
     themes: [
         "Family",
@@ -2844,7 +2816,7 @@ const VERSES = [
     ayahEnd: 80,
 
     translation:
-        "And He ˹alone˺ heals me when I am sick.",
+    "And when I sicken, then He healeth me,",
 
     themes: [
         "Healing",
@@ -2896,8 +2868,7 @@ const VERSES = [
     ayahEnd: 19,
 
     translation:
-        "So Solomon smiled in amusement at her words, and prayed, “My Lord! Inspire me to ˹always˺ be thankful for Your favours which You have blessed me and my parents with, and to do good deeds that please you. Admit me, by Your mercy, into ˹the company of˺ Your righteous servants.”",
-
+    "And (Solomon) smiled, laughing at her speech, and said: My Lord, arouse me to be thankful for Thy favour wherewith Thou hast favoured me and my parents, and to do good that shall be pleasing unto Thee, and include me in (the number of) Thy righteous slaves.",
     themes: [
         "Gratitude",
         "Good Deeds",
@@ -2950,8 +2921,7 @@ const VERSES = [
     ayahEnd: 24,
 
     translation:
-        "So he watered ˹their herd˺ for them, then withdrew to the shade and prayed, “My Lord! I am truly in ˹desperate˺ need of whatever provision You may have in store for me.”",
-
+    "So he watered (their flock) for them. Then he turned aside into the shade, and said: My Lord! I am needy of whatever good Thou sendest down for me.",
     themes: [
         "Provision",
         "Du'a",
@@ -3004,8 +2974,7 @@ const VERSES = [
     ayahEnd: 77,
 
     translation:
-        "Rather, seek the ˹reward˺ of the Hereafter by means of what Allah has granted you, without forgetting your share of this world. And be good ˹to others˺ as Allah has been good to you. Do not seek to spread corruption in the land, for Allah certainly does not like the corruptors.",
-
+    "But seek the abode of the Hereafter in that which Allah hath given thee and neglect not thy portion of the world, and be thou kind even as Allah hath been kind to thee, and seek not corruption in the earth; lo! Allah loveth not corrupters,",
     themes: [
         "Balance",
         "Hereafter",
@@ -3057,7 +3026,7 @@ const VERSES = [
     ayahEnd: 69,
 
     translation:
-        "As for those who struggle in Our cause, We will surely guide them along Our Way. And Allah is certainly with the good-doers.",
+    "As for those who strive in Us, We surely guide them to Our paths, and lo! Allah is with the good.",
 
     themes: [
         "Guidance",
@@ -3111,9 +3080,8 @@ const VERSES = [
     ayahStart: 21,
     ayahEnd: 21,
 
-    translation:
-        "And one of His signs is that He created for you spouses from among yourselves so that you may find comfort in them. And He has placed between you compassion and mercy. Surely in this are signs for people who reflect.",
-
+   translation:
+    "And of His signs is this: He created for you helpmeets from yourselves that ye might find rest in them, and He ordained between you love and mercy. Lo! herein indeed are portents for folk who reflect.",
     themes: [
         "Marriage",
         "Love",
@@ -3167,8 +3135,7 @@ const VERSES = [
     ayahEnd: 19,
 
     translation:
-        "“O my dear son! Establish prayer, encourage what is good and forbid what is evil, and endure patiently whatever befalls you. Surely this is a resolve to aspire to. “And do not turn your nose up to people, nor walk pridefully upon the earth. Surely Allah does not like whoever is arrogant, boastful. Be moderate in your pace. And lower your voice, for the ugliest of all voices is certainly the braying of donkeys.”",
-
+    "O my dear son! Establish worship and enjoin kindness and forbid iniquity, and persevere whatever may befall thee. Lo! that is of the steadfast heart of things.\nTurn not thy cheek in scorn toward folk, nor walk with pertness in the land. Lo! Allah loveth not each braggart boaster.\nBe modest in thy bearing and subdue thy voice. Lo! the harshest of all voices is the voice of the ass.",
     themes: [
         "Prayer",
         "Patience",
@@ -3222,9 +3189,8 @@ const VERSES = [
     ayahStart: 16,
     ayahEnd: 17,
 
-    translation:
-        "They abandon their beds, invoking their Lord with hope and fear, and donate from what We have provided for them. No soul can imagine what delights are kept in store for them as a reward for what they used to do.",
-
+   translation:
+    "Who forsake their beds to cry unto their Lord in fear and hope, and spend of that We have bestowed on them.\nNo soul knoweth what is kept hid for them of joy, as a reward for what they used to do.",
     themes: [
         "Worship",
         "Hope",
@@ -3275,7 +3241,7 @@ const VERSES = [
     ayahEnd: 21,
 
     translation:
-        "Indeed, in the Messenger of Allah you have an excellent example for whoever has hope in Allah and the Last Day, and remembers Allah often.",
+    "Verily in the messenger of Allah ye have a good example for him who looketh unto Allah and the Last Day, and remembereth Allah much.",
 
     themes: [
         "Following the Prophet",
@@ -3326,8 +3292,7 @@ const VERSES = [
     ayahEnd: 35,
 
     translation:
-        "Surely ˹for˺ Muslim men and women, believing men and women, devout men and women, truthful men and women, patient men and women, humble men and women, charitable men and women, fasting men and women, men and women who guard their chastity, and men and women who remember Allah often—for ˹all of˺ them Allah has prepared forgiveness and a great reward.",
-
+    "Lo! men who surrender unto Allah, and women who surrender, and men who believe and women who believe, and men who obey and women who obey, and men who speak the truth and women who speak the truth, and men who persevere (in righteousness) and women who persevere, and men who are humble and women who are humble, and men who give alms and women who give alms, and men who fast and women who fast, and men who guard their modesty and women who guard (their modesty), and men who remember Allah much and women who remember - Allah hath prepared for them forgiveness and a vast reward.",
     themes: [
         "Faith",
         "Good Character",
@@ -3379,8 +3344,7 @@ const VERSES = [
     ayahEnd: 71,
 
     translation:
-        "O believers! Be mindful of Allah, and say what is right. He will bless your deeds for you, and forgive your sins. And whoever obeys Allah and His Messenger, has truly achieved a great triumph.",
-
+    "O ye who believe! Guard your duty to Allah, and speak words straight to the point;\nHe will adjust your works for you and will forgive you your sins. Whosoever obeyeth Allah and His messenger, he verily hath gained a signal victory.",
     themes: [
         "Truthfulness",
         "Taqwa",
@@ -3432,7 +3396,7 @@ const VERSES = [
     ayahEnd: 2,
 
     translation:
-        "Whatever mercy Allah opens up for people, none can withhold it. And whatever He withholds, none but Him can release it. For He is the Almighty, All-Wise.",
+    "That which Allah openeth unto mankind of mercy none can withhold it; and that which He withholdeth none can release thereafter. He is the Mighty, the Wise.",
 
     themes: [
         "Mercy",
@@ -3488,7 +3452,7 @@ const VERSES = [
     ayahEnd: 15,
 
     translation:
-        "O humanity! It is you who stand in need of Allah, but Allah ˹alone˺ is the Self-Sufficient, Praiseworthy.",
+    "O mankind! Ye are the poor in your relation to Allah. And Allah! He is the Absolute, the Owner of Praise.",
 
     themes: [
         "Reliance on Allah",
@@ -3541,7 +3505,7 @@ const VERSES = [
     ayahEnd: 82,
 
     translation:
-        "All it takes, when He wills something ˹to be˺, is simply to say to it: “Be!” And it is!",
+    "But His command, when He intendeth a thing, is only that He saith unto it: Be! and it is.",
 
     themes: [
         "Allah's Power",
@@ -3596,8 +3560,7 @@ const VERSES = [
     ayahEnd: 10,
 
     translation:
-        "Say ˹O Prophet, that Allah says˺, “O My servants who believe! Be mindful of your Lord. Those who do good in this world will have a good reward. And Allah’s earth is spacious. Only those who endure patiently will be given their reward without limit.”",
-
+    "Say: O My bondmen who believe! Observe your duty to your Lord. For those who do good in this world there is good, and Allah's earth is spacious. Verily the steadfast will be paid their wages without stint.",
     themes: [
         "Patience",
         "Reward",
@@ -3652,8 +3615,7 @@ const VERSES = [
     ayahEnd: 53,
 
     translation:
-        "Say, ˹O Prophet, that Allah says,˺ “O My servants who have exceeded the limits against their souls! Do not lose hope in Allah’s mercy, for Allah certainly forgives all sins. He is indeed the All-Forgiving, Most Merciful.",
-
+    "Say: O My slaves who have been prodigal to their own hurt! Despair not of the mercy of Allah, Who forgiveth all sins. Lo! He is the Forgiving, the Merciful.",
     themes: [
         "Forgiveness",
         "Mercy",
@@ -3710,8 +3672,7 @@ const VERSES = [
     ayahEnd: 73,
 
     translation:
-        "And those who were mindful of their Lord will be led to Paradise in ˹successive˺ groups. When they arrive at its ˹already˺ open gates, its keepers will say, “Peace be upon you! You have done well, so come in, to stay forever.”",
-
+    "And those who keep their duty to their Lord are driven unto the Garden in troops till, when they reach it, and the gates thereof are opened, and the warders thereof say unto them: Peace be unto you! Ye are good, so enter ye (the Garden of delight), to dwell therein;",
     themes: [
         "Paradise",
         "Reward",
@@ -3762,7 +3723,7 @@ const VERSES = [
     ayahEnd: 44,
 
     translation:
-        "You will remember what I say to you, and I entrust my affairs to Allah. Surely Allah is All-Seeing of all ˹His˺ servants.",
+    "And ye will remember what I say unto you. I confide my cause unto Allah. Lo! Allah is Seer of (His) slaves.",
 
     themes: [
         "Trust in Allah",
@@ -3817,7 +3778,7 @@ const VERSES = [
     ayahEnd: 60,
 
     translation:
-        "Your Lord has proclaimed, “Call upon Me, I will respond to you. Surely those who are too proud to worship Me will enter Hell, fully humbled.”",
+    "And your Lord hath said: Pray unto Me and I will hear your prayer. Lo! those who scorn My service, they will enter hell, disgraced.",
 
     themes: [
         "Du'a",
@@ -3872,8 +3833,7 @@ const VERSES = [
     ayahEnd: 32,
 
     translation:
-        "Surely those who say, “Our Lord is Allah,” and then remain steadfast, the angels descend upon them, ˹saying,˺ “Do not fear, nor grieve. Rather, rejoice in the good news of Paradise, which you have been promised. We are your supporters in this worldly life and in the Hereafter. There you will have whatever your souls desire, and there you will have whatever you ask for: an accommodation from the All-Forgiving, Most Merciful ˹Lord˺.”",
-
+    "Lo! those who say: Our Lord is Allah, and afterward are upright, the angels descend upon them, saying: Fear not nor grieve, but hear good tidings of the paradise which ye are promised.\nWe are your protecting friends in the life of the world and in the Hereafter. There ye will have (all) that your souls desire, and there ye will have (all) for which ye pray.\nA gift of welcome from One Forgiving, Merciful.",
     themes: [
         "Steadfastness",
         "Hope",
@@ -3929,7 +3889,7 @@ const VERSES = [
     ayahEnd: 34,
 
     translation:
-        "Good and evil cannot be equal. Respond ˹to evil˺ with what is best, then the one you are in a feud with will be like a close friend.",
+    "The good deed and the evil deed are not alike. Repel the evil deed with one which is better, then lo! he, between whom and thee there was enmity (will become) as though he was a bosom friend.",
 
     themes: [
         "Forgiveness",
@@ -3984,7 +3944,7 @@ const VERSES = [
     ayahEnd: 30,
 
     translation:
-        "Whatever affliction befalls you is because of what your own hands have committed. And He pardons much.",
+    "Whatever of misfortune striketh you, it is what your right hands have earned. And He forgiveth much.",
 
     themes: [
         "Accountability",
@@ -4037,7 +3997,7 @@ const VERSES = [
     ayahEnd: 43,
 
     translation:
-        "And whoever endures patiently and forgives—surely this is a resolve to aspire to.",
+    "And verily whoso is patient and forgiveth - lo! that, verily, is (of) the steadfast heart of things.",
 
     themes: [
         "Patience",
@@ -4091,8 +4051,7 @@ const VERSES = [
     ayahEnd: 48,
 
     translation:
-        "But if they turn away, We have not sent you ˹O Prophet˺ as a keeper over them. Your duty is only to deliver ˹the message˺. And indeed, when We let someone taste a mercy from Us, they become prideful ˹because˺ of it. But when afflicted with evil because of what their hands have done, then one becomes totally ungrateful.",
-
+    "But if they are averse, We have not sent thee as a warder over them. Thine is only to convey (the message). And lo! when We cause man to taste of mercy from Us he exulteth therefor. And if some evil striketh them because of that which their own hands have sent before, then lo! man is an ingrate.",
     themes: [
         "Responsibility",
         "Gratitude",
@@ -4145,8 +4104,7 @@ const VERSES = [
     ayahEnd: 50,
 
     translation:
-        "To Allah ˹alone˺ belongs the kingdom of the heavens and the earth. He creates whatever He wills. He blesses whoever He wills with daughters, and blesses whoever He wills with sons, or grants both, sons and daughters, ˹to whoever He wills˺, and leaves whoever He wills infertile. He is indeed All-Knowing, Most Capable.",
-
+    "Unto Allah belongeth the Sovereignty of the heavens and the earth. He createth what He will. He bestoweth female (offspring) upon whom He will, and bestoweth male (offspring) upon whom He will;\nOr He mingleth them, males and females, and He maketh barren whom He will. Lo! He is Knower, Powerful.",
     themes: [
         "Children",
         "Allah's Wisdom",
@@ -4199,7 +4157,7 @@ const VERSES = [
     ayahEnd: 36,
 
     translation:
-        "And whoever turns a blind eye to the Reminder of the Most Compassionate, We place at the disposal of each a devilish one as their close associate,",
+    "And he whose sight is dim to the remembrance of the Beneficent, We assign unto him a devil who becometh his comrade;",
 
     themes: [
         "Remembrance of Allah",
@@ -4253,7 +4211,7 @@ const VERSES = [
     ayahEnd: 7,
 
     translation:
-        "O believers! If you stand up for Allah, He will help you and make your steps firm.",
+    "O ye who believe! If ye help Allah, He will help you and will make your foothold firm.",
 
     themes: [
         "Faith",
@@ -4308,7 +4266,7 @@ const VERSES = [
     ayahEnd: 10,
 
     translation:
-        "The believers are but one brotherhood, so make peace between your brothers. And be mindful of Allah so you may be shown mercy.",
+    "The believers are naught else than brothers. Therefore make peace between your brethren and observe your duty to Allah that haply ye may obtain mercy.",
 
     themes: [
         "Brotherhood",
@@ -4361,9 +4319,8 @@ const VERSES = [
     ayahStart: 11,
     ayahEnd: 11,
 
-    translation:
-        "O believers! Do not let some ˹men˺ ridicule others, they may be better than them, nor let ˹some˺ women ridicule other women, they may be better than them. Do not defame one another, nor call each other by offensive nicknames. How evil it is to act rebelliously after having faith! And whoever does not repent, it is they who are the ˹true˺ wrongdoers.",
-
+   translation:
+    "O ye who believe! Let not a folk deride a folk who may be better than they (are), nor let women (deride) women who may be better than they are; neither defame one another, nor insult one another by nicknames. Bad is the name of lewdness after faith. And whoso turneth not in repentance, such are evil-doers.",
     themes: [
         "Respect",
         "Humility",
@@ -4416,8 +4373,7 @@ const VERSES = [
     ayahEnd: 12,
 
     translation:
-        "O believers! Avoid many suspicions, ˹for˺ indeed, some suspicions are sinful. And do not spy, nor backbite one another. Would any of you like to eat the flesh of their dead brother? You would despise that! And fear Allah. Surely Allah is ˹the˺ Accepter of Repentance, Most Merciful.",
-
+    "O ye who believe! Shun much suspicion; for lo! some suspicion is a crime. And spy not, neither backbite one another. Would one of you love to eat the flesh of his dead brother? Ye abhor that (so abhor the other)! And keep your duty (to Allah). Lo! Allah is Relenting, Merciful.",
     themes: [
         "Backbiting",
         "Repentance",
@@ -4470,7 +4426,7 @@ const VERSES = [
     ayahEnd: 16,
 
     translation:
-        "Indeed, ˹it is˺ We ˹Who˺ created humankind and ˹fully˺ know what their souls whisper to them, and We are closer to them than ˹their˺ jugular vein.",
+    "We verily created man and We know what his soul whispereth to him, and We are nearer to him than his jugular vein.",
 
     themes: [
         "Allah's Nearness",
@@ -4525,7 +4481,7 @@ const VERSES = [
     ayahEnd: 56,
 
     translation:
-        "I did not create jinn and humans except to worship Me.",
+    "I created the jinn and humankind only that they might worship Me.",
 
     themes: [
         "Purpose",
@@ -4579,7 +4535,7 @@ const VERSES = [
     ayahEnd: 13,
 
     translation:
-        "Then which of your Lord’s favours will you ˹humans and jinn˺ both deny?",
+    "Which is it, of the favours of your Lord, that ye deny?",
 
     themes: [
         "Gratitude",
@@ -4634,8 +4590,7 @@ const VERSES = [
     ayahEnd: 20,
 
     translation:
-        "Know that this worldly life is no more than play, amusement, luxury, mutual boasting, and competition in wealth and children. This is like rain that causes plants to grow, to the delight of the planters. But later the plants dry up and you see them wither, then they are reduced to chaff. And in the Hereafter there will be either severe punishment or forgiveness and pleasure of Allah, whereas the life of this world is no more than the delusion of enjoyment.",
-
+    "Know that the life of the world is only play, and idle talk, and pageantry, and boasting among you, and rivalry in respect of wealth and children; as the likeness of vegetation after rain, whereof the growth is pleasing to the husbandman, but afterward it drieth up and thou seest it turning yellow, then it becometh straw. And in the Hereafter there is grievous punishment, and (also) forgiveness from Allah and His good pleasure, whereas the life of the world is but matter of illusion.",
     themes: [
         "Worldly Life",
         "Hereafter",
@@ -4688,8 +4643,7 @@ const VERSES = [
     ayahEnd: 28,
 
     translation:
-        "O people of faith! Fear Allah and believe in His Messenger. ˹And˺ He will grant you a double share of His mercy, provide you with a light to walk in ˹on Judgment Day˺, and forgive you. For Allah is All-Forgiving, Most Merciful.",
-
+    "O ye who believe! Be mindful of your duty to Allah and put faith in His messenger. He will give you twofold of His mercy and will appoint for you a light wherein ye shall walk, and will forgive you. Allah is Forgiving, Merciful;",
     themes: [
         "Mercy",
         "Forgiveness",
@@ -4742,8 +4696,7 @@ const VERSES = [
     ayahEnd: 18,
 
     translation:
-        "O believers! Be mindful of Allah and let every soul look to what ˹deeds˺ it has sent forth for tomorrow. And fear Allah, ˹for˺ certainly Allah is All-Aware of what you do.",
-
+    "O ye who believe! Observe your duty to Allah. And let every soul look to that which it sendeth on before for the morrow. And observe your duty to Allah. Lo! Allah is Informed of what ye do.",
     themes: [
         "Self-Reflection",
         "Accountability",
@@ -4796,8 +4749,7 @@ const VERSES = [
     ayahEnd: 11,
 
     translation:
-        "No calamity befalls ˹anyone˺ except by Allah’s Will. And whoever has faith in Allah, He will ˹rightly˺ guide their hearts ˹through adversity˺. And Allah has ˹perfect˺ knowledge of all things.",
-
+    "No calamity befalleth save by Allah's leave. And whosoever believeth in Allah, He guideth his heart. And Allah is Knower of all things.",
     themes: [
         "Trust in Allah",
         "Calamity",
@@ -4851,9 +4803,8 @@ const VERSES = [
     ayahStart: 1,
     ayahEnd: 11,
 
-    translation:
-        "By the morning sunlight, and the night when it falls still! Your Lord ˹O Prophet˺ has not abandoned you, nor has He become hateful ˹of you˺. And the next life is certainly far better for you than this one. And ˹surely˺ your Lord will give so much to you that you will be pleased. Did He not find you as an orphan then sheltered you? Did He not find you unguided then guided you? And did He not find you needy then satisfied your needs? So do not oppress the orphan, nor repulse the beggar. And proclaim the blessings of your Lord.",
-
+   translation:
+    "By the morning hours, And by the night when it is stillest, Thy Lord hath not forsaken thee nor doth He hate thee, And verily the latter portion will be better for thee than the former, And verily thy Lord will give unto thee so that thou wilt be content. Did He not find thee an orphan and protect (thee)? Did He not find thee wandering and direct (thee)? Did He not find thee destitute and enrich (thee)? Therefor the orphan oppress not, Therefor the beggar drive not away, Therefor of the bounty of thy Lord be thy discourse.",
     themes: [
         "Hope",
         "Allah's Care",
@@ -4915,8 +4866,7 @@ const VERSES = [
     ayahEnd: 8,
 
     translation:
-        "Have We not uplifted your heart for you ˹O Prophet˺, relieved you of the burden which weighed so heavily on your back, and elevated your renown for you? So, surely with hardship comes ease. Surely with ˹that˺ hardship comes ˹more˺ ease. So once you have fulfilled ˹your duty˺, strive ˹in devotion˺, turning to your Lord ˹alone˺ with hope.",
-
+    "Have We not caused thy bosom to dilate, And eased thee of the burden Which weighed down thy back; And exalted thy fame? But lo! with hardship goeth ease, Lo! with hardship goeth ease; So when thou art relieved, still toil And strive to please thy Lord.",
     themes: [
         "Hope",
         "Ease After Hardship",
@@ -4974,9 +4924,8 @@ const VERSES = [
     ayahStart: 4,
     ayahEnd: 6,
 
-    translation:
-        "Indeed, We created humans in the best form. But We will reduce them to the lowest of the low ˹in Hell˺, except those who believe and do good—they will have a never-ending reward.",
-
+   translation:
+    "Surely We created man of the best stature, Then we reduced him to the lowest of the low, Save those who believe and do good works, and theirs is a reward unfailing.",
     themes: [
         "Human Dignity",
         "Faith",
@@ -5029,8 +4978,7 @@ const VERSES = [
     ayahEnd: 5,
 
     translation:
-        "Read, ˹O Prophet,˺ in the Name of your Lord Who created— created humans from a clinging clot. Read! And your Lord is the Most Generous, Who taught by the pen—taught humanity what they knew not.",
-
+    "Read: In the name of thy Lord Who createth, Createth man from a clot. Read: And thy Lord is the Most Bounteous, Who teacheth by the pen, Teacheth man that which he knew not.",
     themes: [
         "Knowledge",
         "Learning",
@@ -5083,8 +5031,7 @@ const VERSES = [
     ayahEnd: 5,
 
     translation:
-        "Indeed, ˹it is˺ We ˹Who˺ sent this ˹Quran˺ down on the Night of Glory. And what will make you realize what the Night of Glory is? The Night of Glory is better than a thousand months. That night the angels and the ˹holy˺ spirit descend, by the permission of their Lord, for every ˹decreed˺ matter. It is all peace until the break of dawn.",
-
+    "Lo! We revealed it on the Night of Predestination. Ah, what will convey unto thee what the Night of Power is! The Night of Power is better than a thousand months. The angels and the Spirit descend therein, by the permission of their Lord, with all decrees. (The night is) Peace until the rising of the dawn.",
     themes: [
         "Laylat al-Qadr",
         "Quran",
@@ -5139,7 +5086,7 @@ const VERSES = [
     ayahEnd: 8,
 
     translation:
-        "So whoever does an atom’s weight of good will see it. And whoever does an atom’s weight of evil will see it.",
+    "And whoso doeth good an atom's weight will see it then, And whoso doeth ill an atom's weight will see it then.",
 
     themes: [
         "Accountability",
@@ -5193,8 +5140,7 @@ const VERSES = [
     ayahEnd: 3,
 
     translation:
-        "By the ˹passage of˺ time! Surely humanity is in ˹grave˺ loss, except those who have faith, do good, and urge each other to the truth, and urge each other to perseverance.",
-
+    "By the declining day, Lo! man is a state of loss, Save those who believe and do good works, and exhort one another to truth and exhort one another to endurance.",
     themes: [
         "Time",
         "Faith",
@@ -5248,8 +5194,7 @@ const VERSES = [
     ayahEnd: 4,
 
     translation:
-        "Say, ˹O Prophet,˺ “He is Allah—One ˹and Indivisible˺; Allah—the Sustainer ˹needed by all˺. He has never had offspring, nor was He born. And there is none comparable to Him.”",
-
+    "Say: He is Allah, the One! Allah, the eternally Besought of all! He begetteth not nor was begotten. And there is none comparable unto Him.",
     themes: [
         "Tawhid",
         "Allah's Oneness",
@@ -5300,8 +5245,7 @@ const VERSES = [
     ayahEnd: 5,
 
     translation:
-        "Say, ˹O Prophet,˺ “I seek refuge in the Lord of the daybreak from the evil of whatever He has created, and from the evil of the night when it grows dark, and from the evil of those ˹witches casting spells by˺ blowing onto knots, and from the evil of an envier when they envy.”",
-
+    "Say: I seek refuge in the Lord of the Daybreak From the evil of that which He created; From the evil of the darkness when it is intense, And from the evil of malignant witchcraft, And from the evil of the envier when he envieth.",
     themes: [
         "Protection",
         "Seeking Refuge",
@@ -5354,8 +5298,7 @@ const VERSES = [
     ayahEnd: 6,
 
     translation:
-        "Say, ˹O Prophet,˺ “I seek refuge in the Lord of humankind, the Master of humankind, the God of humankind, from the evil of the lurking whisperer—who whispers into the hearts of humankind—from among jinn and humankind.”",
-
+    "Say: I seek refuge in the Lord of mankind, The King of mankind, The God of mankind, From the evil of the sneaking whisperer, Who whispereth in the hearts of mankind, Of the jinn and of mankind.",
     themes: [
         "Protection",
         "Seeking Refuge",

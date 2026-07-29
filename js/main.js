@@ -5,6 +5,54 @@ let selectedFocus = "";
 
 showWelcome();
 
+const vocabularyPopup = document.createElement("div");
+
+vocabularyPopup.id = "vocabularyPopup";
+
+document.body.appendChild(vocabularyPopup);
+
+document.addEventListener("click", function(event){
+
+    const word = event.target.closest(".vocabWord");
+
+    if(word){
+
+        const key = word.dataset.word;
+
+        const entry = VOCABULARY[key];
+
+        if(!entry){
+
+            return;
+
+        }
+
+        vocabularyPopup.innerHTML = `
+<strong>${word.textContent}</strong>
+<br><br>
+${entry.meaning}
+`;
+
+        const rect = word.getBoundingClientRect();
+
+        vocabularyPopup.style.left =
+            window.scrollX + rect.left + "px";
+
+        vocabularyPopup.style.top =
+            window.scrollY + rect.bottom + 12 + "px";
+
+        vocabularyPopup.classList.add("show");
+
+        event.stopPropagation();
+
+        return;
+
+    }
+
+    vocabularyPopup.classList.remove("show");
+
+});
+
 function showWelcome(){
 
 resetProfile();
@@ -33,6 +81,8 @@ app.innerHTML = `
 <a href="#" onclick="showVerseOfDay()">Verse of the Day</a>
 
 <a href="#" onclick="showAbout()">About</a>
+
+<a href="#" onclick="showReferences()">References</a>
 
 </div>
 
@@ -112,6 +162,8 @@ app.innerHTML = `
 
 <a href="#" style="color:#B8923A;">About</a>
 
+<a href="#" onclick="showReferences()">References</a>
+
 </div>
 
 </div>
@@ -187,6 +239,108 @@ Created with sincere intention by M M Abbas Raza.
 `;
 window.scrollTo(0,0);
 }
+function showReferences(){
+
+    document.body.classList.remove("homePage");
+
+    requestAnimationFrame(() => {
+
+        window.scrollTo(0,0);
+
+    });
+
+    app.innerHTML = `
+
+<div class="topNav">
+
+<div class="siteTitle">
+
+☪ The Quran Companion
+
+</div>
+
+<div class="navLinks">
+
+<a href="#" onclick="showWelcome()">Home</a>
+
+<a href="#" onclick="showVerseOfDay()">Verse of the Day</a>
+
+<a href="#" onclick="showAbout()">About</a>
+
+<a href="#" style="color:#B8923A;">References</a>
+
+</div>
+
+</div>
+
+<div class="headerDivider"></div>
+
+<div class="welcome aboutPage">
+
+<h2>References</h2>
+
+<div class="heroDivider"></div>
+
+<h3>Qur'an Translation</h3>
+
+<p>
+
+All English Qur'anic translations used throughout this project are taken from:
+
+</p>
+
+<p>
+
+<b>Mohammed Marmaduke Pickthall</b><br>
+
+<i>The Meaning of the Glorious Koran</i><br>
+
+First published in 1930.
+
+</p>
+
+<h3>Quran Guidance Database (QGD)</h3>
+
+<p>
+
+The Quran Guidance Database (QGD) is the verse categorisation system developed specifically for <strong>The Quran Companion</strong>.
+
+Verses are organised according to journeys, themes, emotions, situations and keywords to help users discover relevant passages for reflection.
+
+</p>
+
+<h3>Vocabulary</h3>
+
+<p>
+
+Vocabulary definitions are original explanatory notes created specifically for this project to help readers understand older English words found in the Pickthall translation.
+
+</p>
+
+<h3>Version</h3>
+
+<p>
+
+Translation: <strong>Mohammed Marmaduke Pickthall (1930)</strong><br>
+
+QGD: <strong>Version 1.0</strong>
+
+</p>
+
+<button onclick="showWelcome()">
+
+Return Home
+
+</button>
+
+</div>
+
+`;
+
+    window.scrollTo(0,0);
+
+}
+
 function showVerseOfDay(){
 
 document.body.classList.remove("homePage");
@@ -261,7 +415,7 @@ Verse of the Day
 
 <div class="verseCard">
 
-${verse.translation}
+${formatVerseWithVocabulary(verse.translation)}
 
 </div>
 
@@ -281,6 +435,24 @@ ${reminder}
 
 `;
 window.scrollTo(0,0);
+}
+
+function formatVerseWithVocabulary(text){
+
+    return text.replace(/\b([A-Za-z]+(?:\s+[A-Za-z]+)?)\b/g, function(match){
+
+        const key = match.toLowerCase();
+
+        if(VOCABULARY[key]){
+
+            return `<span class="vocabWord" data-word="${key}">${match}</span>`;
+
+        }
+
+        return match;
+
+    });
+
 }
 
 function showQuestion(id){
@@ -531,6 +703,8 @@ app.innerHTML = `
 
 <a href="#" onclick="showAbout()">About</a>
 
+<a href="#" onclick="showReferences()">References</a>
+
 </div>
 
 </div>
@@ -551,7 +725,7 @@ app.innerHTML = `
 
 <div class="verseCard">
 
-${verse.translation}
+${formatVerseWithVocabulary(verse.translation)}
 
 </div>
 
@@ -617,6 +791,8 @@ function showRelatedVerses(journey){
 
 <a href="#" onclick="showAbout()">About</a>
 
+<a href="#" onclick="showReferences()">References</a>
+
 </div>
 
 </div>
@@ -657,7 +833,7 @@ function showRelatedVerses(journey){
 
         <p>
 
-        ${verse.translation}
+        ${formatVerseWithVocabulary(verse.translation)}
 
         </p>
 

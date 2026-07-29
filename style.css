@@ -932,3 +932,69 @@ button{
     margin-bottom:25px;
 
 }
+
+/* ===========================
+   VOCABULARY
+=========================== */
+
+.vocabWord{
+
+    border-bottom:2px dotted #B8923A;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.vocabWord:hover{
+
+    color:#B8923A;
+
+}
+
+#vocabularyPopup{
+
+    position:absolute;
+
+    max-width:280px;
+
+    padding:16px 18px;
+
+    background:white;
+
+    border:1px solid #E8D8B6;
+
+    border-left:5px solid #B8923A;
+
+    border-radius:16px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.15);
+
+    font-size:16px;
+
+    line-height:1.6;
+
+    color:#4A433B;
+
+    z-index:9999;
+
+    display:none;
+
+}
+
+#vocabularyPopup.show{
+
+    display:block;
+
+}
+
+#vocabularyPopup strong{
+
+    color:#274236;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:22px;
+
+}
