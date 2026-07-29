@@ -439,7 +439,7 @@ window.scrollTo(0,0);
 
 function formatVerseWithVocabulary(text){
 
-    return text.replace(/\b([A-Za-z]+(?:\s+[A-Za-z]+)?)\b/g, function(match){
+    return text.replace(/\b[A-Za-z]+\b/g, function(match){
 
         const key = match.toLowerCase();
 
