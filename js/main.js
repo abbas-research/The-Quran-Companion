@@ -1,7 +1,6 @@
 const app = document.getElementById("app");
 let questionHistory = [];
 let selectedJourney = "";
-let selectedFocus = "";
 
 showWelcome();
 
@@ -30,7 +29,7 @@ document.addEventListener("click", function(event){
         vocabularyPopup.innerHTML = `
 <strong>${word.textContent}</strong>
 <br><br>
-${entry.meaning}
+${entry}
 `;
 
         const rect = word.getBoundingClientRect();
@@ -55,9 +54,8 @@ ${entry.meaning}
 
 function showWelcome(){
 
-resetProfile();
-
 questionHistory = [];
+selectedJourney = "";
 document.body.classList.add("homePage");
 requestAnimationFrame(() => {
 
@@ -100,7 +98,7 @@ app.innerHTML = `
 
 <p class="heroIntro">
 
-Answer two simple questions, then let a Verse of the Holy Qur'an find you—offering comfort, hope, gratitude, patience, or reflection for where you are today.
+Answer two simple questions, and begin a journey through carefully selected verses from the Holy Qur'an.
 
 </p>
 
@@ -350,7 +348,16 @@ requestAnimationFrame(() => {
 
 });
 
-const today = new Date().toISOString().slice(0,10);
+const now = new Date();
+
+if(now.getHours() < 3){
+
+    now.setDate(now.getDate() - 1);
+
+}
+
+const today =
+    `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,"0")}-${String(now.getDate()).padStart(2,"0")}`;
 
 let savedDate = localStorage.getItem("quran_day");
 let savedVerse = localStorage.getItem("quran_verse");
@@ -369,7 +376,8 @@ const verse = VERSES[savedVerse];
 
 const hour = new Date().getHours();
 
-const reminder = REMINDERS[Math.floor(hour/6)%REMINDERS.length];
+const reflection =
+DAILY_REFLECTIONS[Math.floor(Math.random()*DAILY_REFLECTIONS.length)];
 
 app.innerHTML = `
 
@@ -421,11 +429,11 @@ ${formatVerseWithVocabulary(verse.translation)}
 
 <div class="reflectionCard">
 
-<h3>🌿 For Today</h3>
+<h3>🌿 Today's Reflection</h3>
 
 <p>
 
-${reminder}
+${reflection}
 
 </p>
 
@@ -480,24 +488,82 @@ if(!question){
 
     let html = `
 
-        <div class="question">
+<div class="question">
 
-            <h2>${question.question}</h2>
+<div class="heroOrnament">
 
-    `;
+❈ ✦ ☪ ✦ ❈
+
+</div>
+
+<p class="questionIntro">
+
+The Holy Qur'an has accompanied believers through every season of life, and always will.
+
+Today, let it accompany you.
+
+</p>
+
+<div class="heroDivider"></div>
+
+<p class="questionStep">
+
+Question ${question.id === 1 ? "1" : "2"} of 2
+
+</p>
+
+<h2 class="questionTitle">
+
+${question.id === 1
+? "Which statement feels closest to your heart today?"
+: question.question}
+
+</h2>
+
+`;
 
     question.answers.forEach((answer,index)=>{
 
-        html += `
+const subtitles = {
 
-            <button class="answerButton"
-                    onclick="selectAnswer(${id},${index})">
+"Today has been difficult.":"Feeling overwhelmed or carrying something heavy today.",
 
-                ${answer.text}
+"I've been feeling anxious.":"Worrying about something that lies ahead.",
 
-            </button>
+"I need guidance.":"Looking for clarity or direction.",
 
-        `;
+"I want to turn back to Allah.":"Seeking forgiveness and a fresh beginning.",
+
+"I'm searching for peace.":"Hoping to find comfort and tranquillity.",
+
+"Alhamdulillah, I feel grateful today.":"Thankful for Allah's blessings today.",
+
+"I want to grow as a Muslim.":"Hoping to strengthen my faith and character.",
+
+"I want to reflect on Allah's signs.":"Reflecting upon His words and His creation."
+
+};
+
+html += `
+
+<div class="questionCard"
+onclick="selectAnswer(${id},${index})">
+
+<div class="questionCardTitle">
+
+${answer.text}
+
+</div>
+
+<div class="questionCardSubtitle">
+
+${subtitles[answer.text] || ""}
+
+</div>
+
+</div>
+
+`;
 
     });
 
@@ -549,31 +615,17 @@ html += `</div>`;
 
 }
 
-function selectAnswer(questionId,answerIndex){
+function selectAnswer(questionId, answerIndex){
 
-    const question =
-        QUESTIONS.find(q=>q.id===questionId);
+    const question = QUESTIONS.find(q => q.id === questionId);
 
-    const answer =
-        question.answers[answerIndex];
+    const answer = question.answers[answerIndex];
 
-    if(answer.scores){
+    if(answer.journey){
 
-    addScores(answer.scores);
+        selectedJourney = answer.journey;
 
-}
-
-if(answer.journey){
-
-    selectedJourney = answer.journey;
-
-}
-
-if(answer.focus){
-
-    selectedFocus = answer.focus;
-
-}
+    }
 
     questionHistory.push(questionId);
 
@@ -654,19 +706,9 @@ function renderResult(){
 
 });
 
-    const selectedJourneyId =
-    selectedJourney + "_" + selectedFocus;
-    console.log(selectedJourney);
-console.log(selectedFocus);
-console.log(selectedJourneyId);
+    const verse = findVerse(selectedJourney);
 
-const relatedVerses = VERSES.filter(verse =>
-    verse.journeys &&
-    verse.journeys.includes(selectedJourneyId)
-);
-console.log(relatedVerses);
-
-if(relatedVerses.length === 0){
+if(!verse){
 
     app.innerHTML = `
     <div class="resultCard">
@@ -677,13 +719,15 @@ if(relatedVerses.length === 0){
     return;
 }
 
-const verse =
-    relatedVerses.find(v => v.primaryJourney === selectedJourneyId)
-    || relatedVerses[Math.floor(Math.random() * relatedVerses.length)];
+const group = selectedJourney.split("_")[0];
 
-const reflection =
-    REFLECTIONS[getHighestTheme()] ||
-    REFLECTIONS["Hope"];
+const reflection = REFLECTIONS[group] || {
+
+    title: "A Gentle Reminder",
+
+    text: "Take a quiet moment with this verse and ask Allah to open your heart to His guidance."
+
+};
 
 app.innerHTML = `
 
@@ -731,7 +775,7 @@ ${formatVerseWithVocabulary(verse.translation)}
 
 <div class="reflectionCard">
 
-<h3>${reflection.title}</h3>
+<h3>🌿 A Gentle Reminder</h3>
 
 <p>
 
@@ -740,7 +784,14 @@ ${reflection.text}
 </p>
 
 </div>
-<button onclick="showRelatedVerses('${selectedJourneyId}')">
+
+<p class="carryVerse">
+
+Take this verse with you today. 
+
+</p>
+
+<button onclick="showRelatedVerses('${selectedJourney}')">
 
 Show More Related Verses
 
@@ -768,10 +819,20 @@ window.scrollTo(0,0);
 }
 function showRelatedVerses(journey){
 
-    const verses = VERSES.filter(v =>
-        v.journeys &&
-        v.journeys.includes(journey)
-    );
+    const map = JOURNEY_MAP.find(
+    j => j.primaryJourney === journey
+);
+
+if(!map){
+
+    showWelcome();
+    return;
+
+}
+
+const verses = map.otherVerses
+    .map(ref => VERSES.find(v => v.reference === ref))
+    .filter(Boolean);
 
     let html = `
 

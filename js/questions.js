@@ -3,128 +3,49 @@ const QUESTIONS = [
 {
     id: 1,
 
-    question: "How would you describe today?",
+    question: "Which statement best describes today?",
 
     answers: [
 
         {
-    text: "I'm struggling",
-
-journey: "STRUGGLE",
-
-    scores:{
-
-        themes:{
-            Hope:3,
-            Patience:3,
-            Mercy:2
+            text: "Today has been difficult.",
+            next: 2
         },
-
-        emotions:{
-            Overwhelmed:3,
-            Discouraged:2
-        },
-
-        situations:{
-    "Hardship":3
-},
-
-        keywords:{
-            Hope:2
-        }
-
-    },
-
-    next:2
-},
 
         {
-    text: "I'm anxious",
-
-journey: "ANXIOUS",
-
-    scores:{
-
-        themes:{
-            Trust:4,
-            Peace:3,
-            Hope:2
+            text: "I've been feeling anxious.",
+            next: 3
         },
-
-        emotions:{
-            Anxious:4,
-            Fearful:2
-        },
-
-        situations:{
-    "Future Uncertainty":3
-},
-
-        keywords:{
-            Trust:3
-        }
-
-    },
-
-    next:3
-},
 
         {
-    text: "I'm grateful",
-    journey: "GRATEFUL",
-
-    scores:{
-
-        themes:{
-            Gratitude:5,
-            Blessings:3
+            text: "I need guidance.",
+            next: 4
         },
-
-        emotions:{
-            Grateful:5
-        },
-
-        situations:{
-    "Daily Reflection":2
-},
-
-        keywords:{
-            Gratitude:3
-        }
-
-    },
-
-    next:4
-},
 
         {
-    text: "I'm looking for guidance",
-    journey: "GUIDANCE",
-
-    scores:{
-
-        themes:{
-            Guidance:5,
-            Knowledge:3
+            text: "I want to turn back to Allah.",
+            next: 5
         },
 
-        emotions:{
-            Confused:3,
-            Lost:3
+        {
+            text: "I'm searching for peace.",
+            next: 6
         },
 
-        situations:{
-    "Seeking Purpose":3
-},
+        {
+            text: "Alhamdulillah, I feel grateful today.",
+            next: 7
+        },
 
-        keywords:{
-            Guidance:3
+        {
+            text: "I want to grow as a Muslim.",
+            next: 8
+        },
+
+        {
+            text: "I want to reflect on Allah's signs.",
+            next: 9
         }
-
-    },
-
-    next:5
-},
 
     ]
 },
@@ -132,102 +53,56 @@ journey: "ANXIOUS",
 {
     id: 2,
 
-    question: "What hurts the most?",
+    question: "What has been weighing on you the most?",
 
     answers: [
 
         {
-            text: "My heart",
-            focus: "HEART",
-
-            scores:{
-                themes:{
-                    Mercy:3,
-                    Hope:2
-                },
-                emotions:{
-                    Heartbroken:4,
-                    Lonely:2
-                },
-                situations:{
-    "Heartbreak":3
-},
-                keywords:{
-                    Comfort:2
-                }
-            },
-
-            next:999
+            text: "My heart feels heavy.",
+            journey: "STRUGGLING_HEART",
+            next: 999
         },
 
         {
-            text:"My family",
-            focus: "FAMILY",
-
-            scores:{
-                themes:{
-                    Patience:3,
-                    Mercy:2
-                },
-                emotions:{
-                    Hurt:3
-                },
-                situations:{
-    "Family Conflict":4
-},
-                keywords:{
-                    Family:2
-                }
-            },
-
-            next:999
+            text: "Everything feels overwhelming.",
+            journey: "STRUGGLING_OVERWHELMED",
+            next: 999
         },
 
         {
-            text:"My future",
-            focus: "FUTURE",
-
-            scores:{
-                themes:{
-                    Trust:4,
-                    Hope:3
-                },
-                emotions:{
-                    Worried:3,
-                    Anxious:3
-                },
-                situations:{
-    "Future Uncertainty":4
-},
-                keywords:{
-                    Rizq:2
-                }
-            },
-
-            next:999
+            text: "I'm grieving a loss.",
+            journey: "STRUGGLING_LOSS",
+            next: 999
         },
 
         {
-            text:"I don't know",
-            focus: "LOST",
+            text: "I feel alone.",
+            journey: "STRUGGLING_LONELY",
+            next: 999
+        },
 
-            scores:{
-                themes:{
-                    Guidance:4
-                },
-                emotions:{
-                    Confused:4,
-                    Lost:3
-                },
-                situations:{
-    "Seeking Purpose":4
-},
-                keywords:{
-                    Guidance:3
-                }
-            },
+        {
+            text: "My relationships are difficult.",
+            journey: "STRUGGLING_RELATIONSHIPS",
+            next: 999
+        },
 
-            next:999
+        {
+            text: "I'm struggling with myself.",
+            journey: "STRUGGLING_SELF",
+            next: 999
+        },
+
+        {
+            text: "I'm struggling to stay patient.",
+            journey: "STRUGGLING_PATIENCE",
+            next: 999
+        },
+
+        {
+            text: "I don't really know.",
+            journey: "STRUGGLING_UNKNOWN",
+            next: 999
         }
 
     ]
@@ -236,124 +111,56 @@ journey: "ANXIOUS",
 {
     id: 3,
 
-    question: "What are you worried about?",
+    question: "What has been making you feel anxious?",
 
     answers: [
 
         {
-            text: "Money",
-            focus: "MONEY",
-
-            scores:{
-
-                themes:{
-                    Trust:4,
-                    Hope:2
-                },
-
-                emotions:{
-                    Anxious:3
-                },
-
-                situations:{
-                    "Financial Difficulty":5
-                },
-
-                keywords:{
-                    Rizq:3
-                }
-
-            },
-
-            next:999
+            text: "I'm worried about my future.",
+            journey: "ANXIOUS_FUTURE",
+            next: 999
         },
 
         {
-            text:"Health",
-            focus: "HEALTH",
-
-            scores:{
-
-                themes:{
-                    Hope:3,
-                    Mercy:2
-                },
-
-                emotions:{
-                    Afraid:3,
-                    Anxious:2
-                },
-
-                situations:{
-                    "Illness":5
-                },
-
-                keywords:{
-                    Healing:3
-                }
-
-            },
-
-            next:999
+            text: "I'm worried about my provision (rizq).",
+            journey: "ANXIOUS_PROVISION",
+            next: 999
         },
 
         {
-            text:"The future",
-            focus: "FUTURE",
-
-            scores:{
-
-                themes:{
-                    Trust:4,
-                    Hope:4
-                },
-
-                emotions:{
-                    Worried:4,
-                    Anxious:3
-                },
-
-                situations:{
-                    "Future Uncertainty":5
-                },
-
-                keywords:{
-                    Trust:3
-                }
-
-            },
-
-            next:999
+            text: "I'm worried about my health.",
+            journey: "ANXIOUS_HEALTH",
+            next: 999
         },
 
         {
-            text:"Everything",
-            focus: "EVERYTHING",
+            text: "I'm afraid of failing.",
+            journey: "ANXIOUS_FAILURE",
+            next: 999
+        },
 
-            scores:{
+        {
+            text: "I'm struggling to make a decision.",
+            journey: "ANXIOUS_DECISIONS",
+            next: 999
+        },
 
-                themes:{
-                    Trust:4,
-                    Mercy:3,
-                    Hope:3
-                },
+        {
+            text: "I'm feeling afraid.",
+            journey: "ANXIOUS_FEAR",
+            next: 999
+        },
 
-                emotions:{
-                    Overwhelmed:5,
-                    Anxious:4
-                },
+        {
+            text: "I can't stop overthinking.",
+            journey: "ANXIOUS_OVERTHINKING",
+            next: 999
+        },
 
-                situations:{
-                    "Hardship":5
-                },
-
-                keywords:{
-                    Comfort:3
-                }
-
-            },
-
-            next:999
+        {
+            text: "My responsibilities feel too heavy.",
+            journey: "ANXIOUS_RESPONSIBILITIES",
+            next: 999
         }
 
     ]
@@ -362,251 +169,344 @@ journey: "ANXIOUS",
 {
     id: 4,
 
-    question: "What are you grateful for?",
+    question: "What guidance are you seeking?",
 
     answers: [
 
         {
-            text:"Family",
-            focus: "FAMILY",
-
-            scores:{
-
-                themes:{
-                    Gratitude:5,
-                    Mercy:2
-                },
-
-                emotions:{
-                    Grateful:4
-                },
-
-                situations:{
-                    "Family Blessings":5
-                },
-
-                keywords:{
-                    Family:4,
-                    Gratitude:3
-                }
-
-            },
-
-            next:999
+            text: "I need direction in my life.",
+            journey: "GUIDANCE_DIRECTION",
+            next: 999
         },
 
         {
-            text:"Health",
-            focus: "HEALTH",
-
-            scores:{
-
-                themes:{
-                    Gratitude:5,
-                    Hope:2
-                },
-
-                emotions:{
-                    Grateful:4
-                },
-
-                situations:{
-                    "Health":5
-                },
-
-                keywords:{
-                    Healing:3,
-                    Gratitude:3
-                }
-
-            },
-
-            next:999
+            text: "I need help making a decision.",
+            journey: "GUIDANCE_DECISION",
+            next: 999
         },
 
         {
-            text:"Faith",
-            focus: "FAITH",
-
-            scores:{
-
-                themes:{
-                    Gratitude:4,
-                    Trust:4,
-                    Guidance:2
-                },
-
-                emotions:{
-                    Grateful:4
-                },
-
-                situations:{
-                    "Faith":5
-                },
-
-                keywords:{
-                    Faith:5
-                }
-
-            },
-
-            next:999
+            text: "I'm searching for my purpose.",
+            journey: "GUIDANCE_PURPOSE",
+            next: 999
         },
 
         {
-            text:"Everything",
-            focus: "EVERYTHING",
+            text: "I want to strengthen my faith.",
+            journey: "GUIDANCE_FAITH",
+            next: 999
+        },
 
-            scores:{
+        {
+            text: "I want to increase my knowledge.",
+            journey: "GUIDANCE_KNOWLEDGE",
+            next: 999
+        },
 
-                themes:{
-                    Gratitude:6,
-                    Mercy:3,
-                    Hope:2
-                },
+        {
+            text: "I want to become a better person.",
+            journey: "GUIDANCE_SELF_IMPROVEMENT",
+            next: 999
+        },
 
-                emotions:{
-                    Grateful:5
-                },
+        {
+            text: "I need wisdom.",
+            journey: "GUIDANCE_WISDOM",
+            next: 999
+        },
 
-                situations:{
-                    "Daily Reflection":5
-                },
+        {
+            text: "I feel lost.",
+            journey: "GUIDANCE_LOST",
+            next: 999
+        }
 
-                keywords:{
-                    Gratitude:5
-                }
+    ]
+},
+{
+    id: 5,
 
-            },
+    question: "What best describes your heart today?",
 
-            next:999
+    answers: [
+
+        {
+            text: "I regret what I've done.",
+            journey: "FORGIVENESS_REGRET",
+            next: 999
+        },
+
+        {
+            text: "I'm carrying guilt.",
+            journey: "FORGIVENESS_GUILT",
+            next: 999
+        },
+
+        {
+            text: "I want to return to Allah.",
+            journey: "FORGIVENESS_RETURN",
+            next: 999
+        },
+
+        {
+            text: "I feel distant from Allah.",
+            journey: "FORGIVENESS_DISTANCE",
+            next: 999
+        },
+
+        {
+            text: "I keep falling into the same sins.",
+            journey: "FORGIVENESS_REPEATED",
+            next: 999
+        },
+
+        {
+            text: "I need Allah's mercy.",
+            journey: "FORGIVENESS_MERCY",
+            next: 999
+        },
+
+        {
+            text: "I genuinely want to change.",
+            journey: "FORGIVENESS_CHANGE",
+            next: 999
+        },
+
+        {
+            text: "I need hope.",
+            journey: "FORGIVENESS_HOPE",
+            next: 999
         }
 
     ]
 },
 
 {
-    id: 5,
+    id: 6,
 
-    question: "What are you seeking?",
+    question: "What kind of peace are you searching for?",
 
     answers: [
 
         {
-            text:"Purpose",
-            focus: "PURPOSE",
-
-            scores:{
-
-                themes:{
-                    Guidance:5
-                },
-
-                emotions:{
-                    Lost:3,
-                    Confused:2
-                },
-
-                situations:{
-                    "Seeking Guidance":5
-                },
-
-                keywords:{
-                    Guidance:4
-                }
-
-            },
-
-            next:999
+            text: "Comfort for my heart.",
+            journey: "PEACE_COMFORT",
+            next: 999
         },
 
         {
-            text:"Knowledge",
-            focus: "KNOWLEDGE",
-
-            scores:{
-
-                themes:{
-                    Guidance:4
-                },
-
-                emotions:{
-                    Curious:3
-                },
-
-                situations:{
-                    "Seeking Knowledge":5
-                },
-
-                keywords:{
-                    Knowledge:5
-                }
-
-            },
-
-            next:999
+            text: "My mind won't rest.",
+            journey: "PEACE_RESTLESS",
+            next: 999
         },
 
         {
-            text:"Forgiveness",
-            focus: "FORGIVENESS",
-
-            scores:{
-
-                themes:{
-                    Mercy:6
-                },
-
-                emotions:{
-                    Guilty:4,
-                    Regretful:4,
-                    "Seeking Forgiveness":3
-                },
-
-                situations:{
-                    "Seeking Forgiveness":6,
-                    "Repentance":5,
-                    "After Sin":5,
-                    "Returning to Allah":4
-                },
-
-                keywords:{
-                    Forgiveness:5,
-                    Repentance:4,
-                    Mercy:3
-                }
-
-            },
-
-            next:999
+            text: "I feel lonely.",
+            journey: "PEACE_LONELY",
+            next: 999
         },
 
         {
-            text:"Peace",
-            focus: "PEACE",
+            text: "I need reassurance.",
+            journey: "PEACE_REASSURANCE",
+            next: 999
+        },
 
-            scores:{
+        {
+            text: "Patience through hardship.",
+            journey: "PEACE_PATIENCE",
+            next: 999
+        },
 
-                themes:{
-                    Peace:6,
-                    Trust:2
-                },
+        {
+            text: "Allah's protection.",
+            journey: "PEACE_PROTECTION",
+            next: 999
+        },
 
-                emotions:{
-                    "Seeking Peace":4
-                },
+        {
+            text: "Strength through hardship.",
+            journey: "PEACE_HARDSHIP",
+            next: 999
+        },
 
-                situations:{
-                    "Spiritual Healing":4
-                },
+        {
+            text: "Closeness to Allah.",
+            journey: "PEACE_CLOSENESS",
+            next: 999
+        }
 
-                keywords:{
-                    Peace:5
-                }
+    ]
+},
 
-            },
+{
+    id: 7,
 
-            next:999
+    question: "What are you most grateful for today?",
+
+    answers: [
+
+        {
+            text: "My family.",
+            journey: "GRATEFUL_FAMILY",
+            next: 999
+        },
+
+        {
+            text: "My health.",
+            journey: "GRATEFUL_HEALTH",
+            next: 999
+        },
+
+        {
+            text: "Allah's blessings.",
+            journey: "GRATEFUL_BLESSINGS",
+            next: 999
+        },
+
+        {
+            text: "Remembering Allah.",
+            journey: "GRATEFUL_REMEMBRANCE",
+            next: 999
+        },
+
+        {
+            text: "Being able to express gratitude.",
+            journey: "GRATEFUL_EXPRESSION",
+            next: 999
+        },
+
+        {
+            text: "Allah's protection.",
+            journey: "GRATEFUL_PROTECTION",
+            next: 999
+        },
+
+        {
+            text: "The responsibility Allah has entrusted me with.",
+            journey: "GRATEFUL_RESPONSIBILITY",
+            next: 999
+        },
+
+        {
+            text: "The person I'm becoming.",
+            journey: "GRATEFUL_GROWTH",
+            next: 999
+        }
+
+    ]
+},
+
+{
+    id: 8,
+
+    question: "Where would you like to grow?",
+
+    answers: [
+
+        {
+            text: "My character.",
+            journey: "GROWTH_CHARACTER",
+            next: 999
+        },
+
+        {
+            text: "My discipline.",
+            journey: "GROWTH_DISCIPLINE",
+            next: 999
+        },
+
+        {
+            text: "Overcoming my weaknesses.",
+            journey: "GROWTH_WEAKNESSES",
+            next: 999
+        },
+
+        {
+            text: "Drawing closer to Allah.",
+            journey: "GROWTH_CLOSENESS",
+            next: 999
+        },
+
+        {
+            text: "Building better habits.",
+            journey: "GROWTH_HABITS",
+            next: 999
+        },
+
+        {
+            text: "Being more patient.",
+            journey: "GROWTH_PATIENCE",
+            next: 999
+        },
+
+        {
+            text: "Increasing my knowledge.",
+            journey: "GROWTH_KNOWLEDGE",
+            next: 999
+        },
+
+        {
+            text: "Becoming a better version of myself.",
+            journey: "GROWTH_BETTER_SELF",
+            next: 999
+        }
+
+    ]
+},
+{
+    id: 9,
+
+    question: "What would you like to reflect on today?",
+
+    answers: [
+
+        {
+            text: "Why Allah created us.",
+            journey: "REFLECTION_PURPOSE",
+            next: 999
+        },
+
+        {
+            text: "The signs of Allah in creation.",
+            journey: "REFLECTION_CREATION",
+            next: 999
+        },
+
+        {
+            text: "The signs Allah places around us every day.",
+            journey: "REFLECTION_SIGNS",
+            next: 999
+        },
+
+        {
+            text: "The Hereafter.",
+            journey: "REFLECTION_HEREAFTER",
+            next: 999
+        },
+
+        {
+            text: "My faith.",
+            journey: "REFLECTION_FAITH",
+            next: 999
+        },
+
+        {
+            text: "Allah's wisdom.",
+            journey: "REFLECTION_WISDOM",
+            next: 999
+        },
+
+        {
+            text: "The choices I make in life.",
+            journey: "REFLECTION_CHOICES",
+            next: 999
+        },
+
+        {
+            text: "Reflecting on the Holy Qur'an.",
+            journey: "REFLECTION_QURAN",
+            next: 999
         }
 
     ]

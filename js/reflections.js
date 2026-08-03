@@ -1,65 +1,74 @@
 const REFLECTIONS = {
 
-    Hope: {
+    STRUGGLING: {
 
-        title: "Hold on to Hope",
+        title: "You're Not Carrying This Alone",
 
         text:
-        "Sometimes our vision becomes smaller than Allah's mercy. This verse reminds us that today's hardship is not the end of your story. Keep moving forward one step at a time."
+        "Some days simply getting through the day feels like a victory. If your heart feels exhausted, know that Allah has seen every tear, every effort, and every silent du'a that no one else knows about. You don't need to have everything figured out today. Read His words slowly, take what your heart needs, and trust that He has not abandoned you."
 
     },
 
-    Trust: {
+    ANXIOUS: {
 
-        title: "Place Your Trust",
+        title: "Breathe. Allah Is Already There.",
 
         text:
-        "There are moments when we cannot control what happens next. The Qur'an repeatedly reminds us that peace begins when we place our trust in Allah while continuing to do our best."
+        "When anxiety grows, our minds race ahead into tomorrow. Allah is already there. You don't need every answer today. Read His words slowly, let your heart settle, and remember that the One who controls your future also cares for you more than you can imagine."
 
     },
 
-    Patience: {
+    GUIDANCE: {
 
-        title: "Beautiful Patience",
+        title: "Keep Seeking Him",
 
         text:
-        "Patience is not giving up. It is continuing with dignity, hope, and faith even when the outcome is hidden from us."
+        "The fact that you're searching for guidance is itself a beautiful sign. Keep asking Allah sincerely, keep taking small steps, and don't be discouraged if clarity doesn't come immediately. Guidance often arrives one step at a time."
 
     },
 
-    Gratitude: {
+    FORGIVENESS: {
 
-        title: "Remember Your Blessings",
+        title: "Your Story Isn't Over",
 
         text:
-        "Gratitude changes the way we see our lives. Even during difficulty, noticing Allah's blessings can soften the heart and strengthen faith."
+        "We all fall short. Shaytan wants you to believe your mistakes define you, but Allah repeatedly invites His servants back to Him. Regret can become the beginning of something beautiful when it leads you towards sincere repentance."
 
     },
 
-    Guidance: {
+    PEACE: {
 
-        title: "Seek Guidance",
+        title: "Let Your Heart Rest",
 
         text:
-        "Every believer experiences moments of uncertainty. Seeking guidance is itself an act of worship. Allah guides those who sincerely seek Him."
+        "Not every storm ends immediately. Sometimes Allah gives peace before He changes our circumstances. Read this verse without rushing, breathe deeply, and allow your heart to rest in the remembrance of Him."
 
     },
 
-    Peace: {
+    GRATEFUL: {
 
-        title: "Find Inner Peace",
+        title: "Hold On To This Feeling",
 
         text:
-        "The world may remain noisy, but remembrance of Allah allows the heart to become peaceful even when circumstances have not yet changed."
+        "Gratitude is one of the greatest gifts Allah places in the heart. Take a moment to recognise His blessings today, both the obvious and the hidden. A thankful heart often notices mercy where others only see ordinary moments."
 
     },
 
-    Mercy: {
+    GROWTH: {
 
-        title: "Never Lose Hope",
+        title: "Keep Becoming Better",
 
         text:
-        "Allah's mercy is greater than our mistakes, fears, and weaknesses. Turning back to Him is always the beginning of healing."
+        "No believer becomes their best self overnight. Every sincere effort, every small improvement, every time you stand back up after falling—Allah sees it all. Keep moving forward, even if today's step feels small."
+
+    },
+
+    REFLECTION: {
+
+        title: "Pause Before You Continue",
+
+        text:
+        "Life moves quickly, but hearts grow through reflection. Sit with this verse for a little while. Ask yourself what Allah might be inviting you to notice today, and let His words stay with you long after you leave this page."
 
     }
 

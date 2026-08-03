@@ -94,25 +94,56 @@ function getHighestTheme(){
     return highestTheme;
 
 }
+function shuffleArray(array){
 
-function findVerse(selectedJourneyId){
+    const copy = [...array];
 
-    const bestVerses = VERSES.filter(verse =>
-    verse.journeys &&
-    verse.journeys.includes(selectedJourneyId)
-);
+    for(let i = copy.length - 1; i > 0; i--){
 
-if(bestVerses.length === 0){
+        const j = Math.floor(Math.random() * (i + 1));
 
-    return VERSES[0];
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+
+    }
+
+    return copy;
 
 }
+function findVerse(journeyId){
 
-const randomIndex =
-    Math.floor(Math.random() * bestVerses.length);
+    const journey = JOURNEY_MAP.find(
+        j => j.primaryJourney === journeyId
+    );
 
-console.log("Selected Verse:", bestVerses[randomIndex]);
+    if(!journey){
 
-return bestVerses[randomIndex];
+        console.error("Journey not found:", journeyId);
+
+        return null;
+
+    }
+
+    const storageKey = "queue_" + journeyId;
+
+    let queue = JSON.parse(localStorage.getItem(storageKey));
+
+    if(!queue || queue.length === 0){
+
+        queue = shuffleArray(journey.primaryVerses);
+
+    }
+
+    const reference = queue.shift();
+
+    localStorage.setItem(
+        storageKey,
+        JSON.stringify(queue)
+    );
+
+    const verse = VERSES.find(
+        v => v.reference === reference
+    );
+
+    return verse || null;
 
 }

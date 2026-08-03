@@ -169,6 +169,96 @@ button:hover{
     margin:18px auto;
 
 }
+.questionCard{
+
+    position:relative;
+
+    width:660px;
+
+    max-width:100%;
+
+    margin:18px auto;
+
+    padding:18px 24px;
+
+    border-radius:20px;
+
+    background:#FCFBF8;
+
+    border:1px solid #E8D8B6;
+
+    cursor:pointer;
+
+    overflow:hidden;
+
+    transition:.25s ease;
+
+    text-align:left;
+
+    box-shadow:
+        0 8px 22px rgba(0,0,0,.05);
+
+}
+.questionCard::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    bottom:0;
+
+    width:6px;
+
+    background:#B8923A;
+
+    transition:width .25s ease;
+
+}
+
+.questionCard:hover{
+
+    transform:translateY(-2px);
+
+    background:#FFFDF8;
+
+    border-color:#B8923A;
+
+    box-shadow:
+        0 16px 38px rgba(184,146,58,.18);
+
+}
+
+.questionCard:hover::before{
+
+    width:14px;
+
+}
+
+.questionCardTitle{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#274236;
+
+    margin-bottom:6px;
+
+}
+
+.questionCardSubtitle{
+
+    color:#8B8278;
+
+    font-size:16px;
+
+    line-height:1.6;
+
+}
 
 .question h2{
 
@@ -399,6 +489,19 @@ button:hover{
     line-height:1.7;
 
     color:#5F584F;
+
+}
+.questionIntro{
+
+    max-width:540px;
+
+    margin:20px auto;
+
+    color:#666;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
 
 }
 
@@ -996,5 +1099,24 @@ button{
     font-family:'Cormorant Garamond',serif;
 
     font-size:22px;
+
+}
+.carryVerse{
+
+    margin-top:28px;
+
+    margin-bottom:28px;
+
+    text-align:center;
+
+    font-size:0.95rem;
+
+    font-style:italic;
+
+    letter-spacing:0.3px;
+
+    color:#8B7B57;
+
+    opacity:0.9;
 
 }
