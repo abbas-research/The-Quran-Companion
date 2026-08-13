@@ -36,7 +36,10 @@ function showWelcome(){
     requestAnimationFrame(() => window.scrollTo(0,0));
     app.innerHTML = `
 <div class="topNav">
-<div class="siteTitle">☪ Narjis</div>
+<div class="siteTitle">
+  <img src="Assets/logo/playstore-icon.png" alt="Narjis" style="height: 22px; vertical-align: middle; margin-right: 8px;" />
+  Narjis
+</div>
 <div class="navLinks">
 <a href="#" style="color:#B8923A;">Home</a>
 <a href="#" onclick="showVerseOfDay()">Verse of the Day</a>
@@ -64,7 +67,10 @@ function showAbout(){
     requestAnimationFrame(() => window.scrollTo(0,0));
     app.innerHTML = `
 <div class="topNav">
-<div class="siteTitle">☪ Narjis</div>
+<div class="siteTitle">
+  <img src="Assets/logo/playstore-icon.png" alt="Narjis" style="height: 22px; vertical-align: middle; margin-right: 8px;" />
+  Narjis
+</div>
 <div class="navLinks">
 <a href="#" onclick="showWelcome()">Home</a>
 <a href="#" onclick="showVerseOfDay()">Verse of the Day</a>
@@ -95,7 +101,10 @@ function showReferences(){
     requestAnimationFrame(() => window.scrollTo(0,0));
     app.innerHTML = `
 <div class="topNav">
-<div class="siteTitle">☪ Narjis</div>
+<div class="siteTitle">
+  <img src="Assets/logo/playstore-icon.png" alt="Narjis" style="height: 22px; vertical-align: middle; margin-right: 8px;" />
+  Narjis
+</div>
 <div class="navLinks">
 <a href="#" onclick="showWelcome()">Home</a>
 <a href="#" onclick="showVerseOfDay()">Verse of the Day</a>
@@ -146,7 +155,10 @@ function showVerseOfDay(){
     const reflection = DAILY_REFLECTIONS[Math.floor(Math.random()*DAILY_REFLECTIONS.length)];
     app.innerHTML = `
 <div class="topNav">
-<div class="siteTitle">☪ Narjis</div>
+<div class="siteTitle">
+  <img src="Assets/logo/playstore-icon.png" alt="Narjis" style="height: 22px; vertical-align: middle; margin-right: 8px;" />
+  Narjis
+</div>
 <div class="navLinks">
 <a href="#" onclick="showWelcome()">Home</a>
 <a href="#" style="color:#B8923A;">Verse of the Day</a>
@@ -262,7 +274,10 @@ function renderResult(){
     const reflection = REFLECTIONS[group] || { title: "A Gentle Reminder", text: "Take a quiet moment with this verse and ask Allah to open your heart to His guidance." };
     app.innerHTML = `
 <div class="topNav">
-<div class="siteTitle">☪ Narjis</div>
+<div class="siteTitle">
+  <img src="Assets/logo/playstore-icon.png" alt="Narjis" style="height: 22px; vertical-align: middle; margin-right: 8px;" />
+  Narjis
+</div>
 <div class="navLinks">
 <a href="#" onclick="showWelcome()">Home</a>
 <a href="#" onclick="showVerseOfDay()">Verse of the Day</a>
@@ -294,7 +309,10 @@ function showRelatedVerses(journey){
     const verses = map.otherVerses.map(ref => VERSES.find(v => v.reference === ref)).filter(Boolean);
     let html = `
 <div class="topNav">
-<div class="siteTitle">☪ Narjis</div>
+<div class="siteTitle">
+  <img src="Assets/logo/playstore-icon.png" alt="Narjis" style="height: 22px; vertical-align: middle; margin-right: 8px;" />
+  Narjis
+</div>
 <div class="navLinks">
 <a href="#" onclick="showWelcome()">Home</a>
 <a href="#" onclick="showVerseOfDay()">Verse of the Day</a>

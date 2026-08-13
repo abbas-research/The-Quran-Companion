@@ -1,0 +1,40 @@
+Folder PATH listing
+Volume serial number is 000000A3 F447:A722
+C:.
+|   index.html
+|   project_structure.txt
+|   README.md
+|   script.js
+|   style.css
+|   
++---Assets
+|   +---backgrounds
+|   +---icons
+|   \---logo
+|           og-image.png
+|           
++---Data
+|       keywords.js
+|       moods.js
+|       reminders.js
+|       situations.js
+|       themes.js
+|       verses.js
+|       
++---docs
+|       Database Rules.md
+|       Journey Mapping.md
+|       The Quran Translation.pdf
+|       Theme Guide.md
+|       
+\---js
+        app.js
+        engine.js
+        main.js
+        questions.js
+        randomVerse.js
+        reflections.js
+        search.js
+        themeMap.js
+        ui.js
+        
