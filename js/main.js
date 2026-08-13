@@ -86,7 +86,7 @@ function showAbout(){
 <p>This project was created with the sincere hope of helping people reconnect with the Holy Qur'an during moments of hardship, gratitude, uncertainty and reflection.</p>
 <p>The Qur'anic translations are presented without alteration. The accompanying reflections are personal writings intended only for encouragement and contemplation. They are <strong>not</strong> tafsir.</p>
 <p>If you notice incorrect references, categorisation errors, bugs or typographical mistakes, please let me know.</p>
-<div><b>Email</b><p class="emailAddress">muhammad.abbas.research@proton.me</p></div>
+<p>You can reach me via the <a href="privacy-policy.html">contact form on the Privacy page</a>.</p>
 <p class="salawat">اللهم صل على محمد وآل محمد وعجل فرجهم</p>
 <p>May Allah accept this humble effort and make it beneficial for all who visit.</p>
 <button onclick="showWelcome()">Return Home</button>
