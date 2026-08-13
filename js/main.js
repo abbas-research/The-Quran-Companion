@@ -37,7 +37,8 @@ function showWelcome(){
     app.innerHTML = `
 <div class="topNav">
 <div class="siteTitle">
-  <img src="Assets/logo/logo.png" alt="Narjis" style="height: 28px; vertical-align: middle;" />
+  <img src="Assets/logo/logo.png" alt="Narjis" style="height: 22px; vertical-align: middle; margin-right: 8px;" />
+  Narjis
 </div>
 <div class="navLinks">
 <a href="#" style="color:#B8923A;">Home</a>
@@ -67,7 +68,8 @@ function showAbout(){
     app.innerHTML = `
 <div class="topNav">
 <div class="siteTitle">
-  <img src="Assets/logo/logo.png" alt="Narjis" style="height: 28px; vertical-align: middle;" />
+  <img src="Assets/logo/logo.png" alt="Narjis" style="height: 22px; vertical-align: middle; margin-right: 8px;" />
+  Narjis
 </div>
 <div class="navLinks">
 <a href="#" onclick="showWelcome()">Home</a>
@@ -100,7 +102,8 @@ function showReferences(){
     app.innerHTML = `
 <div class="topNav">
 <div class="siteTitle">
-  <img src="Assets/logo/logo.png" alt="Narjis" style="height: 28px; vertical-align: middle;" />
+  <img src="Assets/logo/logo.png" alt="Narjis" style="height: 22px; vertical-align: middle; margin-right: 8px;" />
+  Narjis
 </div>
 <div class="navLinks">
 <a href="#" onclick="showWelcome()">Home</a>
@@ -153,7 +156,8 @@ function showVerseOfDay(){
     app.innerHTML = `
 <div class="topNav">
 <div class="siteTitle">
-  <img src="Assets/logo/logo.png" alt="Narjis" style="height: 28px; vertical-align: middle;" />
+  <img src="Assets/logo/logo.png" alt="Narjis" style="height: 22px; vertical-align: middle; margin-right: 8px;" />
+  Narjis
 </div>
 <div class="navLinks">
 <a href="#" onclick="showWelcome()">Home</a>
@@ -271,7 +275,8 @@ function renderResult(){
     app.innerHTML = `
 <div class="topNav">
 <div class="siteTitle">
-  <img src="Assets/logo/logo.png" alt="Narjis" style="height: 28px; vertical-align: middle;" />
+  <img src="Assets/logo/logo.png" alt="Narjis" style="height: 22px; vertical-align: middle; margin-right: 8px;" />
+  Narjis
 </div>
 <div class="navLinks">
 <a href="#" onclick="showWelcome()">Home</a>
@@ -305,7 +310,8 @@ function showRelatedVerses(journey){
     let html = `
 <div class="topNav">
 <div class="siteTitle">
-  <img src="Assets/logo/logo.png" alt="Narjis" style="height: 28px; vertical-align: middle;" />
+  <img src="Assets/logo/logo.png" alt="Narjis" style="height: 22px; vertical-align: middle; margin-right: 8px;" />
+  Narjis
 </div>
 <div class="navLinks">
 <a href="#" onclick="showWelcome()">Home</a>
